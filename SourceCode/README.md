@@ -2,5 +2,5 @@
 
 
 ### LocalFiles ###
-- <EntityX>.vhd
-- <ConfigX>.vhd
+- {EntityX}.vhd
+- {ConfigX}.vhd
