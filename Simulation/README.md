@@ -4,7 +4,7 @@
 - .mpf
 - .mti
 - do scripts
-- <TBEntityX>.vhd
+- {TBEntityX}.vhd
 
 ### Subdirectories ###
 - TestVectors
