@@ -7,16 +7,18 @@ PORT (X: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 		Y: IN STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 		S: OUT STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 		Cin: IN STD_LOGIC;
-		Cout: OUT STD_LOGIC);
+		Cout: OUT STD_LOGIC;
+		Ovfl: OUT STD_LOGIC);
 END CSAN;
 
 ARCHITECTURE LogicFuncCSAN OF CSAN IS
 -- signal decs
 SIGNAL CwC0, CwC1: STD_LOGIC;
 SIGNAL SwC0, SwC1, SR: STD_LOGIC_VECTOR((N-1)/2 DOWNTO 0);
+SIGNAL Ovfl0, Ovfl1: STD_LOGIC;
 SIGNAL Int0, Int1: STD_LOGIC_VECTOR((N+1)/2 DOWNTO 0);
 SIGNAL MuxResult: STD_LOGIC_VECTOR((N+1)/2 DOWNTO 0);
-SIGNAL tempC: STD_LOGIC;
+SIGNAL tempC, tempO: STD_LOGIC;
 BEGIN
 gen: IF N > C GENERATE
 	left_half_upper: 
@@ -31,7 +33,7 @@ gen: IF N > C GENERATE
 	
 	Int0 <= CWC0 & SwC0;
 	Int1 <= CWC1 & SwC1;
-
+	
 	mux:
 		ENTITY work.Mux2cNb 
 		GENERIC MAP(N => N/2 + 1, C => 1)
@@ -50,6 +52,7 @@ gen: IF N > C GENERATE
 		Cout => tempC
 		);		
 		S((N-1)/2 DOWNTO 0) <= SR;
+	Ovfl <= tempC XOR MuxResult((N+1)/2);
 END GENERATE gen;
 
 
@@ -58,7 +61,7 @@ genbase: IF N <= C GENERATE
 	base_case_fa:
 		ENTITY work.FA(LogicFuncFA) 
 		GENERIC MAP (C => N)
-		PORT MAP(X=>X(C-1 DOWNTO 0), Y=>Y(C-1 DOWNTO 0), S=>S(C-1 DOWNTO 0), Cin => Cin, Cout => Cout);
+		PORT MAP(X=>X(C-1 DOWNTO 0), Y=>Y(C-1 DOWNTO 0), S=>S(C-1 DOWNTO 0), Cin => Cin, Cout => Cout, Ovfl => Ovfl);
 END GENERATE genbase;
 
 

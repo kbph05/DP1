@@ -8,8 +8,7 @@ PORT( X: IN STD_LOGIC_VECTOR(C-1 DOWNTO 0);
 		Y: IN STD_LOGIC_VECTOR(C-1 DOWNTO 0);
 		S: OUT STD_LOGIC_VECTOR(C-1 DOWNTO 0);
 		Cin: IN STD_LOGIC;
-		Cout: OUT STD_LOGIC;
-		Ovfl: OUT STD_LOGIC);
+		Cout: OUT STD_LOGIC);
 END FA;
 
 ARCHITECTURE LogicFuncFA OF FA IS
@@ -21,9 +20,8 @@ gen1: FOR i IN 0 TO C-1 GENERATE
 	Couts(i+1) <= 	'1' WHEN ((Couts(i) = '1' AND X(i) = '1') OR (Couts(i) = '1' AND Y(i) = '1') OR (X(i) = '1' AND Y(i) = '1')) ELSE
 						'0';
 	S(i) <= Couts(i) XOR X(i) XOR Y(i);
-	
 
 END GENERATE gen1;
 Cout <= Couts(C);
-Ovfl <= Couts(C) XOR Couts(C-1);
+
 END LogicFuncFA;

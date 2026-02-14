@@ -1,0 +1,119 @@
+LIBRARY IEEE;
+
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+
+USE STD.TEXTIO.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+use work.Utils.all;
+
+
+
+
+ENTITY TBRCAN IS
+GENERIC (N:NATURAL := 64);
+END ENTITY TBRCAN;
+
+ARCHITECTURE TestRCAN OF TBRCAN IS
+-- Constants
+CONSTANT TestVectorFile : STRING := "Adder00.tvs";
+CONSTANT PreStimTime: TIME := 1ns;
+CONSTANT PostStimTime: TIME := 10ns;
+
+TYPE TestVectorOp IS RECORD
+-- Inputs 
+inX: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+inY: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+inC: STD_LOGIC;
+
+-- Outputs
+outS: STD_LOGIC_VECTOR(N-1 DOWNTO 0);
+outC: STD_LOGIC;
+outOvfl: STD_LOGIC;
+END RECORD TestVectorOp;
+
+-- Files
+FILE InputFile: TEXT OPEN READ_MODE IS "./TestVectors/" & TestVectorFile; 
+FILE OutputFile: TEXT OPEN WRITE_MODE IS "../Documentation/OutputFiles/RCAN_TestResults.txt";
+
+
+-- Signals
+
+-- Table
+-- We do not know how many test vectors there are so we cant have this.
+-- TYPE TestDataTable IS ARRAY (1 to ?) OF TestVectorOP;
+
+
+
+BEGIN
+
+init: 
+PROCESS
+-- Name of transcript file
+VARIABLE TranscriptName : LINE;                    
+BEGIN
+WRITE(TranscriptName, string'("RCAN Test Results For") & time'image(now));
+WRITELINE(OutputFile, TranscriptName);
+END PROCESS init;
+
+main:
+PROCESS
+-- Line we are currently processing
+VARIABLE CurrentLine: LINE;
+-- The TestVector+
+VARIABLE TV: TestVectorOp;
+-- Index
+VARIABLE Index : INTEGER := 1;
+-- For holding each segment of the line to set the TV
+VARIABLE TempHex : STRING(1 to 16);
+VARIABLE TempBit : STD_LOGIC;
+VARIABLE TempChar : CHARACTER;
+BEGIN
+WHILE NOT ENDFILE(InputFile) LOOP
+READLINE(InputFile, CurrentLine);
+
+READ(CurrentLine, TempHex);
+TV.inX := hex_to_slv(TempHex, 64);
+REPORT "TVA: " & slv_to_hex(TV.inX);
+READ(CurrentLine, TempChar);
+
+READ(CurrentLine, TempHex);
+TV.inY := hex_to_slv(TempHex, 64);
+REPORT "TVB: " & slv_to_hex(TV.inY);
+READ(CurrentLine, TempChar);
+
+READ(CurrentLine, TempBit);
+TV.inC := TempBit;
+REPORT "TVCin: " & std_logic'image(TV.inC);
+READ(CurrentLine, TempChar);
+
+READ(CurrentLine, TempHex);
+TV.outS := hex_to_slv(TempHex, 64);
+REPORT "TVS: " & slv_to_hex(TV.outS);
+READ(CurrentLine, TempChar);
+
+READ(CurrentLine, TempBit);
+TV.outC := TempBit;
+REPORT "TVCout: " & std_logic'image(TV.outC);
+READ(CurrentLine, TempChar);
+
+READ(CurrentLine, TempBit);
+TV.outOvfl := TempBit;
+REPORT "TVOvfl: " & std_logic'image(TV.outOvfl);
+
+END LOOP;
+
+WAIT;
+
+END PROCESS main;
+
+
+
+
+
+
+
+
+END TestRCAN;
+
