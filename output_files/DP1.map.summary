@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Fri Feb 13 16:51:54 2026
+Analysis & Synthesis Status : Successful - Fri Feb 13 17:11:48 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : DP1
-Top-level Entity Name : CSA
+Top-level Entity Name : CSAN
 Family : Cyclone IV E
 Total logic elements : 252
     Total combinational functions : 252
