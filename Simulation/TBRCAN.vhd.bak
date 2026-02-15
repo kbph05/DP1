@@ -19,7 +19,7 @@ ARCHITECTURE TestRCAN OF TBRCAN IS
 -- Constants
 CONSTANT TestVectorFile : STRING := "Adder00.tvs";
 CONSTANT PreStimTime: TIME := 1ns;
-CONSTANT PostStimTime: TIME := 10ns;
+CONSTANT PostStimTime: TIME := 10ns; -- This should be arbitrary: it's a topology so delays are nonexistent	
 CONSTANT NL : string(1 to 1) := (1 => CHARACTER'VAL(10));
 
 
@@ -70,7 +70,7 @@ PROCESS
 -- Name of transcript file
 VARIABLE TranscriptName : LINE;                    
 BEGIN
-WRITE(TranscriptName, string'("CSAN Test Results"));
+WRITE(TranscriptName, string'("RCAN Test Results"));
 WRITELINE(OutputFile, TranscriptName);
 WAIT;
 END PROCESS init;
@@ -168,6 +168,15 @@ REPORT
 SEVERITY WARNING
 ;
 ELSE
+REPORT
+"SUCCESS: Sum match" & NL &
+"Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
+"Stimulus:" & NL &
+"A: " & slv_to_hex(TV.inX) & NL &
+"B: " & slv_to_hex(TV.inY) & NL &
+"Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
+"Expected Sum: " & INTEGER'IMAGE(conv_integer(TV.outS)) & NL &
+"Actual Sum: " & INTEGER'IMAGE(conv_integer(DUT_S));
 WRITE(TranscriptLine, string'("Sum: Measurement #" & INTEGER'IMAGE(MeasurementIndex) & ": passed"));
 WRITELINE(OutputFile, TranscriptLine);
 END IF;
@@ -204,6 +213,15 @@ ASSERT DUT_Cout = TV.outC REPORT
 SEVERITY WARNING
 ;
 ELSE
+REPORT
+"SUCCESS: Cout match" & NL &
+"Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
+"Stimulus:" & NL &
+"A: " & slv_to_hex(TV.inX) & NL &
+"B: " & slv_to_hex(TV.inY) & NL &
+"Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
+"Expected Cout: " & INTEGER'IMAGE(conv_integer(TV.outC)) & NL &
+"Actual Cout: " & INTEGER'IMAGE(conv_integer(DUT_Cout));
 WRITE(TranscriptLine, string'("Cout: Measurement #" & INTEGER'IMAGE(MeasurementIndex) & ": passed"));
 WRITELINE(OutputFile, TranscriptLine);
 END IF;
@@ -239,6 +257,15 @@ ASSERT DUT_Ovfl = TV.outOvfl REPORT
 SEVERITY WARNING
 ;
 ELSE
+REPORT
+"SUCCESS: Overflow match" & NL &
+"Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
+"Stimulus:" & NL &
+"A: " & slv_to_hex(TV.inX) & NL &
+"B: " & slv_to_hex(TV.inY) & NL &
+"Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
+"Expected Ovfl: " & INTEGER'IMAGE(conv_integer(TV.outOvfl)) & NL &
+"Actual Ovfl: " & INTEGER'IMAGE(conv_integer(DUT_Ovfl));
 WRITE(TranscriptLine, string'("Ovfl: Measurement #" & INTEGER'IMAGE(MeasurementIndex) & ": passed"));
 WRITELINE(OutputFile, TranscriptLine);
 END IF;
