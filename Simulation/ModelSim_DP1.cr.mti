@@ -1,18 +1,18 @@
-{/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity FA
--- Compiling architecture LogicFuncFA of FA
-
-} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd}
+{/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity Mux2cNb
 -- Compiling architecture LogicFuncMux2cNb of Mux2cNb
+
+} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FA
+-- Compiling architecture LogicFuncFA of FA
 
 } {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -26,16 +26,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling architecture FastRipple of RCAN
 -- Loading entity RCAN
 
-} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity CSAN
--- Compiling architecture LogicFuncCSAN of CSAN
--- Loading entity Mux2cNb
--- Loading entity FA
-
 } {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -46,13 +36,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling package body Utils
 -- Loading package Utils
 
-} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd}
+} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity Mux2c1b
--- Compiling architecture LogicFunc of Mux2c1b
+-- Compiling entity CSAN
+-- Compiling architecture LogicFuncCSAN of CSAN
+-- Loading entity Mux2cNb
+-- Loading entity FA
 
 } {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FullAddr.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FullAddr.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -62,5 +54,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity FullAddr
 -- Compiling architecture behavioural of FullAddr
+
+} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Mux2c1b
+-- Compiling architecture LogicFunc of Mux2c1b
 
 } {} {}}
