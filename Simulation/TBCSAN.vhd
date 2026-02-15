@@ -37,7 +37,7 @@ END RECORD TestVectorOp;
 
 -- Files
 FILE InputFile: TEXT OPEN READ_MODE IS "./TestVectors/" & TestVectorFile; 
-FILE OutputFile: TEXT OPEN WRITE_MODE IS "../Documentation/OutputFiles/CSAN_TestResults.txt";
+FILE OutputFile: TEXT OPEN WRITE_MODE IS "../Documentation/OutputFiles/CSAN_LatestTestResults.txt";
 
 
 -- Signals
@@ -70,7 +70,7 @@ PROCESS
 -- Name of transcript file
 VARIABLE TranscriptName : LINE;                    
 BEGIN
-WRITE(TranscriptName, string'("CSAN Test Results"));
+WRITE(TranscriptName, string'("CSAN Test Results of Latest Run"));
 WRITELINE(OutputFile, TranscriptName);
 WAIT;
 END PROCESS init;

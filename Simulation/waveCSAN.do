@@ -1,5 +1,4 @@
 onerror {resume}
-quietly WaveActivateNextPane {} 0
 add wave -noupdate -divider Constants
 add wave -noupdate /tbcsan/N
 add wave -noupdate -divider {DUT Inputs}
@@ -23,7 +22,6 @@ add wave -noupdate -divider Miscellaneous
 add wave -noupdate /tbcsan/main/MeasurementIndex
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {12 ps} 0}
-quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left

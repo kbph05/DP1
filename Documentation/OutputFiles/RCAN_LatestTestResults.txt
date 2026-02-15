@@ -1,4 +1,4 @@
-CSAN Test Results
+RCAN Test Results of Latest Run
 Sum: Measurement #1: passed
 Cout: Measurement #1: passed
 Ovfl: Measurement #1: passed
@@ -53,3 +53,18 @@ Ovfl: Measurement #17: passed
 Sum: Measurement #18: passed
 Cout: Measurement #18: passed
 Ovfl: Measurement #18: passed
+Sum: Measurement #19: passed
+Cout: Measurement #19: passed
+Ovfl: Measurement #19: passed
+Sum: Measurement #20: passed
+Cout: Measurement #20: passed
+Ovfl: Measurement #20: passed
+Sum: Measurement #21: passed
+Cout: Measurement #21: passed
+Ovfl: Measurement #21: passed
+Sum: Measurement #22: passed
+Cout: Measurement #22: passed
+Ovfl: Measurement #22: passed
+Sum: Measurement #23: passed
+Cout: Measurement #23: passed
+Ovfl: Measurement #23: passed
