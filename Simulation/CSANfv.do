@@ -20,8 +20,10 @@
 package require cmdline; list
 
 # Constants / Flags
-set capture_set 1; list
-
+# default to capturing into transcript 
+if {![info exists ::capture_set]} {
+    set ::capture_set 1; list
+}
 # Version tag just for fun
 set version 1.0.0; list
 

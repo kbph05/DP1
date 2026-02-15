@@ -1,10 +1,10 @@
 # do CSANfv.do
 # 
-# Capturing output into transcript file: ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-14_22-59-02.txt
+# Capturing output into transcript file: ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-14_23-06-08.txt
 # 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:59:02 on Feb 14,2026
-# vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-14_22-59-02.txt ../SourceCode/CSAN.vhd ../SourceCode/FA.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
+# Start time: 23:06:08 on Feb 14,2026
+# vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-14_23-06-08.txt ../SourceCode/CSAN.vhd ../SourceCode/FA.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -42,5 +42,5 @@
 # ** Warning: ./TBRCAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: ./TBRCAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # -- Loading entity RCAN
-# End time: 22:59:02 on Feb 14,2026, Elapsed time: 0:00:00
+# End time: 23:06:08 on Feb 14,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4
