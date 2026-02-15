@@ -56,12 +56,14 @@ gen: IF N > C GENERATE
 		Cout => tempC
 		);		
 		S((N-1)/2 DOWNTO 0) <= SR;
+Ovfl <= (X(N-1) AND Y(N-1) AND (NOT MuxResult((N-1)/2))) OR (NOT (X(N-1)) AND (NOT Y(N-1)) AND (MuxResult((N-1)/2)));
+
 END GENERATE gen;
 
 
 genbase: IF N <= C GENERATE
 	-- Use base full adder
-	base_case_fa:
+	base_case_fa:	
 		ENTITY work.FA(LogicFuncFA) 
 		GENERIC MAP (C => N)
 		PORT MAP(X=>X(C-1 DOWNTO 0), Y=>Y(C-1 DOWNTO 0), S=>S(C-1 DOWNTO 0), Cin => Cin, Cout => Cout, Ovfl => Ovfl);
@@ -69,7 +71,6 @@ END GENERATE genbase;
 -- Logic here: 	If X is neg, and Y is neg, but S is pos: ovfl.
 -- 		If X is pos, and Y is pos, but S is neg: ovfl.
 -- 		Could have also just taken the Ovfl of the left half or something but this is more clear.
-Ovfl <= (X(N-1) AND Y(N-1) AND (NOT MuxResult((N-1)/2))) OR (NOT (X(N-1)) AND (NOT Y(N-1)) AND (MuxResult((N-1)/2)));
 
 
 

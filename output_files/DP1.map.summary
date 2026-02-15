@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Feb 13 18:53:06 2026
+Analysis & Synthesis Status : Successful - Sat Feb 14 19:39:25 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : DP1
 Top-level Entity Name : CSAN
 Family : Cyclone IV E
-Total logic elements : 252
-    Total combinational functions : 252
+Total logic elements : 291
+    Total combinational functions : 291
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 194
+Total pins : 195
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

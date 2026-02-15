@@ -10,40 +10,40 @@ z2
 cModel Technology
 dC:/Users/horva/VSCodeProjects/ENSC_350/LWS02
 Ecsan
-Z0 w1771122900
+Z0 w1771126756
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 1165
+!i122 1201
 Z3 d/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation
 Z4 8/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd
 Z5 F/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd
 l0
 L3 1
-VIoJPGzJ^zoMW?[klbMkIk3
+VL;5oHHkaZ`WlRO3H7g`mL0
 !s100 Xa>]O^[^]WcYE9]Sn0f7g0
 Z6 OV;C;2020.1;71
-32
-Z7 !s110 1771122925
+33
+Z7 !s110 1771126778
 !i10b 1
-Z8 !s108 1771122925.000000
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd|
+Z8 !s108 1771126778.000000
+Z9 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd|
 Z10 !s107 /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd|
 !i113 1
-Z11 o-work work -2002 -explicit
+Z11 o-work work -2008 -explicit
 Z12 tExplicit 1 CvgOpt 0
 Alogicfunccsan
-Z13 DEx4 work 2 fa 0 22 jddK9DkK:RKTYDUa[dmeQ0
-Z14 DEx4 work 7 mux2cnb 0 22 V5OQHJ1PQKMd5_Yci:E6Z0
+Z13 DEx4 work 2 fa 0 22 lKF8a`8g4Ga<LkYh19:UY0
+Z14 DEx4 work 7 mux2cnb 0 22 G]aPUD@n=YD]a?LZ<lN1D2
 R1
 R2
-Z15 DEx4 work 4 csan 0 22 IoJPGzJ^zoMW?[klbMkIk3
-!i122 1165
+Z15 DEx4 work 4 csan 0 22 L;5oHHkaZ`WlRO3H7g`mL0
+!i122 1201
 l22
-L14 63
-VC1kLo1=fADjHWXH9^V]6E2
-!s100 [ek0bif5ehd>?8fifB?zo1
+L14 64
+Vkn0^A`5i9oa4[][_5f@HA1
+!s100 BcA?zjOBlfDj2`_3]F77]0
 R6
-32
+33
 R7
 !i10b 1
 R8
@@ -56,20 +56,20 @@ Efa
 Z16 w1771041483
 R1
 R2
-!i122 1161
+!i122 1197
 R3
 Z17 8/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd
 Z18 F/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd
 l0
 L3 1
-VjddK9DkK:RKTYDUa[dmeQ0
+VlKF8a`8g4Ga<LkYh19:UY0
 !s100 BA37[9Y4:SZ33`Edc`b<;1
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd|
+Z19 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd|
 Z20 !s107 /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd|
 !i113 1
 R11
@@ -78,13 +78,13 @@ Alogicfuncfa
 R1
 R2
 R13
-!i122 1161
+!i122 1197
 l18
 L15 15
-VBebLg8VdifSA1c[FeI9XR2
+V?4C[NV3ZHX=FB7:[]Z6TX1
 !s100 WhXHLGelEO5gZKHWKjTAQ2
 R6
-32
+33
 R7
 !i10b 1
 R8
@@ -98,20 +98,20 @@ Z21 w1771030159
 Z22 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R1
 R2
-!i122 1162
+!i122 1198
 R3
 Z23 8/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FullAddr.vhd
 Z24 F/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FullAddr.vhd
 l0
 L6 1
-V>odjEKidV>:c:k<;RooMR1
+V`EfY0Cb2zKVdAOJ4hUI;J2
 !s100 IU5GiKWF3zF3jVh89<iK03
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FullAddr.vhd|
+Z25 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FullAddr.vhd|
 Z26 !s107 /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FullAddr.vhd|
 !i113 1
 R11
@@ -120,14 +120,14 @@ Abehavioural
 R22
 R1
 R2
-Z27 DEx4 work 8 fulladdr 0 22 >odjEKidV>:c:k<;RooMR1
-!i122 1162
+Z27 DEx4 work 8 fulladdr 0 22 `EfY0Cb2zKVdAOJ4hUI;J2
+!i122 1198
 l18
 L17 5
-V3E>kfjRL_z=T^fT6QH?h>2
+V:O<Ood>FAaD8ZfiYC398M3
 !s100 XRJCm9m@[LMY4V;:8=:@z3
 R6
-32
+33
 R7
 !i10b 1
 R8
@@ -140,20 +140,20 @@ Emux2c1b
 Z28 w1770076646
 R1
 R2
-!i122 1159
+!i122 1195
 R3
 Z29 8/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd
 Z30 F/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd
 l0
 L4 1
-VcJ@K39bQ48AF7Qdh17kLh0
+VnKdH33U[C36QA;8;^?54f0
 !s100 h24c4TMo6[=^T74n5JfIl3
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd|
+Z31 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd|
 Z32 !s107 /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd|
 !i113 1
 R11
@@ -161,14 +161,14 @@ R12
 Alogicfunc
 R1
 R2
-DEx4 work 7 mux2c1b 0 22 cJ@K39bQ48AF7Qdh17kLh0
-!i122 1159
+DEx4 work 7 mux2c1b 0 22 nKdH33U[C36QA;8;^?54f0
+!i122 1195
 l13
 L12 9
-V1DlKz8:UbP7eYWhC^cUC@1
+VM^m=DfV^HK?ZLQ9]T^0Ni0
 !s100 fE:W^[geHDG_:QK=A5i@12
 R6
-32
+33
 R7
 !i10b 1
 R8
@@ -181,20 +181,20 @@ Emux2cnb
 Z33 w1770078255
 R1
 R2
-!i122 1160
+!i122 1196
 R3
 Z34 8/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd
 Z35 F/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd
 l0
 L4 1
-VV5OQHJ1PQKMd5_Yci:E6Z0
+VG]aPUD@n=YD]a?LZ<lN1D2
 !s100 zmg8R4N5cgGO:a[E`@23T3
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd|
+Z36 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd|
 Z37 !s107 /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd|
 !i113 1
 R11
@@ -203,13 +203,13 @@ Alogicfuncmux2cnb
 R1
 R2
 R14
-!i122 1160
+!i122 1196
 l14
 L13 12
-VX940UNBM3L0P4TacDSaFg2
+Vj4bmDRQg^FK1ZiG4UkU2U0
 !s100 oF8kWnRlNPd[T^I2fgH5i2
 R6
-32
+33
 R7
 !i10b 1
 R8
@@ -223,20 +223,20 @@ Z38 w1771120461
 R22
 R1
 R2
-!i122 1164
+!i122 1200
 R3
 Z39 8/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd
 Z40 F/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd
 l0
 Z41 L12 1
-Vh8bBzi9hh59UO0c>Mll@D1
+VYRMNC>Yk6;CD`8No>bE@73
 !s100 `ED3hkO3;>EzHPc8@Y5;>2
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd|
+Z42 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd|
 Z43 !s107 /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd|
 !i113 1
 R11
@@ -245,14 +245,14 @@ Afastripple
 R22
 R1
 R2
-Z44 DEx4 work 4 rcan 0 22 h8bBzi9hh59UO0c>Mll@D1
-!i122 1164
+Z44 DEx4 work 4 rcan 0 22 YRMNC>Yk6;CD`8No>bE@73
+!i122 1200
 l47
 L45 14
-VCMkcUWYXPA2FLRIADO_W<0
+V4eiT?j0chV8eS04P=3haZ3
 !s100 nUfFO1M6TjhFY>^h6D9:k2
 R6
-32
+33
 R7
 !i10b 1
 R8
@@ -267,13 +267,13 @@ R22
 R1
 R2
 R44
-!i122 1164
+!i122 1200
 l31
 Z45 L26 17
-Ve0m1lF1gM48:L[2^cIG1E3
+VjlK<_HcW`iTZ?LQoLkn=]0
 !s100 P`=BR3Z2<lGYgXji?_Vze1
 R6
-32
+33
 R7
 !i10b 1
 R8
@@ -300,16 +300,16 @@ R6
 Z47 !s110 1771118666
 !i10b 1
 Z48 !s108 1771118666.000000
-R42
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd|
 R43
 !i113 1
-R11
+Z50 o-work work -2002 -explicit
 R12
 Abaseline
 R22
 R1
 R2
-Z49 DEx4 work 10 rippleaddr 0 22 @6DXFYo:8cMh0gc7jH=Im1
+Z51 DEx4 work 10 rippleaddr 0 22 @6DXFYo:8cMh0gc7jH=Im1
 !i122 909
 l47
 L45 10
@@ -320,17 +320,17 @@ R6
 R47
 !i10b 1
 R48
-R42
+R49
 R43
 !i113 1
-R11
+R50
 R12
 Afastripple
-R27
+DEx4 work 8 fulladdr 0 22 >odjEKidV>:c:k<;RooMR1
 R22
 R1
 R2
-R49
+R51
 !i122 909
 l31
 R45
@@ -341,108 +341,108 @@ R6
 R47
 !i10b 1
 R48
-R42
+R49
 R43
 !i113 1
-R11
+R50
 R12
 Etbcsan
-Z50 w1771122842
-Z51 DPx4 work 5 utils 0 22 ilzE=FLd:a6;B^B@;=]e`2
-Z52 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
-Z53 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z52 w1771122842
+Z53 DPx4 work 5 utils 0 22 ;oei:U_OBMDkllQGDZ^Lo1
+Z54 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z55 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 R22
 R1
 R2
-!i122 1167
+!i122 1203
 R3
-Z54 8/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd
-Z55 F/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd
+Z56 8/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd
+Z57 F/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd
 l0
-Z56 L14 1
-V4:k5CLcUdCodH@[XzfOG42
+Z58 L14 1
+V0IfETBMaSkB<FLUZI1;M^0
 !s100 bjzghQbE3QV:>A0`8bin@1
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd|
-Z58 !s107 /home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd|
+Z59 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd|
+Z60 !s107 /home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd|
 !i113 1
 R11
 R12
 Atestcsan
 R15
-R51
-R52
 R53
+R54
+R55
 R22
 R1
 R2
-Z59 DEx4 work 6 tbcsan 0 22 4:k5CLcUdCodH@[XzfOG42
-!i122 1167
+Z61 DEx4 work 6 tbcsan 0 22 0IfETBMaSkB<FLUZI1;M^0
+!i122 1203
 l56
-Z60 L18 279
-Z61 VFOBSlgKHiOdKk`>R5>[T51
-Z62 !s100 PP:PziDGHL8igXbBS_Z`;2
+Z62 L18 279
+Z63 VRBn5=:Ko=z6la40L>Mcb53
+Z64 !s100 PP:PziDGHL8igXbBS_Z`;2
 R6
-32
+33
 R7
 !i10b 1
 R8
-R57
-R58
+R59
+R60
 !i113 1
 R11
 R12
 Etbrcan
-Z63 w1771122751
-R51
-R52
+Z65 w1771122751
 R53
+R54
+R55
 R22
 R1
 R2
-!i122 1166
+!i122 1202
 R3
-Z64 8/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd
-Z65 F/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd
+Z66 8/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd
+Z67 F/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd
 l0
-R56
-VC8>>7HlMCI1A;izT7ImAc0
+R58
+V1d9bMM@i2@?MXD>n:8H5z1
 !s100 1Khbn:Qkn[B3Pig^gR9442
 R6
-32
+33
 R7
 !i10b 1
 R8
-Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd|
-Z67 !s107 /home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd|
+Z68 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd|
+Z69 !s107 /home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd|
 !i113 1
 R11
 R12
 Atestrcan
 R44
-R51
-R52
 R53
+R54
+R55
 R22
 R1
 R2
-DEx4 work 6 tbrcan 0 22 C8>>7HlMCI1A;izT7ImAc0
-!i122 1166
+DEx4 work 6 tbrcan 0 22 1d9bMM@i2@?MXD>n:8H5z1
+!i122 1202
 l56
-R60
-V5CTWl9n<_SO5X2^EES]mi1
+R62
+VJJXigi@b`eRa7Y5??76UN0
 !s100 6VhAE]1n9ZHBJVJMeVgDi3
 R6
-32
+33
 R7
 !i10b 1
 R8
-R66
-R67
+R68
+R69
 !i113 1
 R11
 R12
@@ -450,43 +450,43 @@ Putils
 R22
 R1
 R2
-!i122 1163
-Z68 w1771038835
+!i122 1199
+Z70 w1771038835
 R3
-Z69 8/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd
-Z70 F/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd
+Z71 8/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd
+Z72 F/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd
 l0
 L5 1
-VilzE=FLd:a6;B^B@;=]e`2
+V;oei:U_OBMDkllQGDZ^Lo1
 !s100 1NOjYF6oVcbc5MRPLC^2m0
 R6
-32
+33
 b1
 R7
 !i10b 1
 R8
-Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd|
-Z72 !s107 /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd|
+Z73 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd|
+Z74 !s107 /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd|
 !i113 1
 R11
 R12
 Bbody
-R51
+R53
 R22
 R1
 R2
-!i122 1163
+!i122 1199
 l0
 L10 1
-VofhHnjTzGHf;c5<@KaObY0
+Vm7czGXi7cYlb[J27LVOk`0
 !s100 DV;V>fKO@d;oJj`PoDDjb1
 R6
-32
+33
 R7
 !i10b 1
 R8
-R71
-R72
+R73
+R74
 !i113 1
 R11
 R12

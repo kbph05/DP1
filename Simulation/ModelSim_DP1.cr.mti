@@ -1,4 +1,4 @@
-{/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd} {2 {vcom -work work -2002 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd}
+{/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd} {2 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -13,7 +13,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 ** Warning: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 -- Loading entity RCAN
 
-} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd}
+} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -21,7 +21,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity FA
 -- Compiling architecture LogicFuncFA of FA
 
-} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd}
+} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -29,7 +29,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity Mux2cNb
 -- Compiling architecture LogicFuncMux2cNb of Mux2cNb
 
-} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd} {2 {vcom -work work -2002 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd}
+} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd} {2 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -44,7 +44,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 ** Warning: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 -- Loading entity CSAN
 
-} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd}
+} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -56,7 +56,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling architecture FastRipple of RCAN
 -- Loading entity RCAN
 
-} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd}
+} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -66,7 +66,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling package body Utils
 -- Loading package Utils
 
-} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd}
+} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -74,7 +74,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity Mux2c1b
 -- Compiling architecture LogicFunc of Mux2c1b
 
-} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FullAddr.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FullAddr.vhd}
+} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FullAddr.vhd} {1 {vcom -work work -2008 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FullAddr.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO

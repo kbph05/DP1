@@ -1,5 +1,5 @@
 Flow report for DP1
-Fri Feb 13 18:53:27 2026
+Sat Feb 14 19:39:35 2026
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Feb 13 18:53:24 2026       ;
+; Flow Status                        ; Successful - Sat Feb 14 19:39:33 2026       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; DP1                                         ;
 ; Top-level Entity Name              ; CSAN                                        ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 252 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 252 / 114,480 ( < 1 % )                     ;
+; Total logic elements               ; 291 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 291 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 194 / 529 ( 37 % )                          ;
+; Total pins                         ; 195 / 529 ( 37 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/13/2026 18:52:58 ;
+; Start date & time ; 02/14/2026 19:39:18 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DP1                 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 66017728304029.177103757855880         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 66017728304029.177112675853498         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -91,6 +91,8 @@ https://fpgasoftware.intel.com/eula.
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
 ; TOP_LEVEL_ENTITY                    ; CSAN                                   ; DP1           ; --          ; --                                ;
+; VHDL_INPUT_VERSION                  ; VHDL_2008                              ; VHDL_1993     ; --          ; --                                ;
+; VHDL_SHOW_LMF_MAPPING_MESSAGES      ; Off                                    ; --            ; --          ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
@@ -99,11 +101,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 442 MB              ; 00:00:22                           ;
-; Fitter               ; 00:00:13     ; 1.0                     ; 1581 MB             ; 00:00:23                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 356 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 603 MB              ; 00:00:02                           ;
-; Total                ; 00:00:27     ; --                      ; --                  ; 00:00:50                           ;
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 465 MB              ; 00:00:13                           ;
+; Fitter               ; 00:00:06     ; 1.0                     ; 1585 MB             ; 00:00:11                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 364 MB              ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.1                     ; 609 MB              ; 00:00:01                           ;
+; Total                ; 00:00:15     ; --                      ; --                  ; 00:00:27                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

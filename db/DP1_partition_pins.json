@@ -264,6 +264,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "Ovfl",
+					"strict" : false
+				},
+				{
 					"name" : "X[0]",
 					"strict" : false
 				},
@@ -292,11 +296,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "Y[3]",
+					"name" : "X[3]",
 					"strict" : false
 				},
 				{
-					"name" : "X[3]",
+					"name" : "Y[3]",
 					"strict" : false
 				},
 				{
@@ -332,11 +336,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "Y[8]",
+					"name" : "X[8]",
 					"strict" : false
 				},
 				{
-					"name" : "X[8]",
+					"name" : "Y[8]",
 					"strict" : false
 				},
 				{
