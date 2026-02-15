@@ -4,12 +4,12 @@ use ieee.numeric_std.all;
 
 -- WORK SUMMARY (to add to project log excel):
 -- 2/13:	12-2:00 pm - fixed the carries of fastripple, fixed issue with the types not matching with baseline
--- 2/11: 2-8:00 pm - wrote a new version of RCAN; using now a seperate entity for a 1 bit adder rather than the rtl showing a bunch of gates, this way
+-- 2/11: 2-8:00 pm - wrote a new version of rippleaddr; using now a seperate entity for a 1 bit adder rather than the rtl showing a bunch of gates, this way
 --							will contain each adder in a box - a lot cleaner
--- 2/10: 3-5:00 pm - wrote first version of RCAN and fastripple architecture - one entity, one architecture, all in one file 
+-- 2/10: 3-5:00 pm - wrote first version of rippleaddr and fastripple architecture - one entity, one architecture, all in one file 
 
 -- Take the FullAddr entity to make 64 full adders into a ripple adder
-Entity RCAN is
+Entity RippleAddr is
 generic( 
 	N : natural := 64
 );
@@ -19,10 +19,10 @@ port (
 		S		: out std_logic_vector(N-1 downto 0);
 		Cout 	: out std_logic
 );
-end RCAN;
+end RippleAddr;
 
 -- FastRipple Adder
-architecture FastRipple of RCAN is
+architecture FastRipple of RippleAddr is
 
 signal carries : std_logic_vector(N-1 downto 0);
 
@@ -38,7 +38,7 @@ begin
 end architecture;
 
 -- Synthesized ripple adder:
-architecture Baseline of RCAN is
+architecture Baseline of RippleAddr is
  begin
 	process(X,Y)
 	begin

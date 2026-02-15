@@ -54,7 +54,7 @@ SIGNAL DUT_Ovfl: STD_LOGIC;
 
 
 BEGIN
-DUT: ENTITY WORK.CSAN(LogicFuncCSAN)
+DUT: ENTITY WORK.RCAN(Baseline)
 GENERIC MAP (N => N)
 PORT MAP (
 X => TBX,
@@ -62,8 +62,7 @@ Y => TBY,
 Cin => TBC,
 
 S => DUT_S,
-Cout => DUT_Cout,
-Ovfl => DUT_Ovfl
+Cout => DUT_Cout
 );
 init: 
 PROCESS

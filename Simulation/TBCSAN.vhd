@@ -37,7 +37,7 @@ END RECORD TestVectorOp;
 
 -- Files
 FILE InputFile: TEXT OPEN READ_MODE IS "./TestVectors/" & TestVectorFile; 
-FILE OutputFile: TEXT OPEN WRITE_MODE IS "../Documentation/OutputFiles/RCAN_TestResults.txt";
+FILE OutputFile: TEXT OPEN WRITE_MODE IS "../Documentation/OutputFiles/CSAN_TestResults.txt";
 
 
 -- Signals
@@ -72,6 +72,7 @@ VARIABLE TranscriptName : LINE;
 BEGIN
 WRITE(TranscriptName, string'("RCAN Test Results For") & time'image(now));
 WRITELINE(OutputFile, TranscriptName);
+WAIT;
 END PROCESS init;
 
 main:
@@ -87,38 +88,40 @@ VARIABLE MeasurementIndex : INTEGER := 1;
 VARIABLE TempHex : STRING(1 to 16);
 VARIABLE TempBit : STD_LOGIC;
 VARIABLE TempChar : CHARACTER;
+VARIABLE TVPassed : BOOLEAN;
 BEGIN
 WHILE NOT ENDFILE(InputFile) LOOP
+TVPassed := TRUE;
 READLINE(InputFile, CurrentLine);
 
 READ(CurrentLine, TempHex);
 TV.inX := hex_to_slv(TempHex, 64);
-REPORT "TVA: " & slv_to_hex(TV.inX);
+-- REPORT "TVA: " & slv_to_hex(TV.inX);
 READ(CurrentLine, TempChar);
 
 READ(CurrentLine, TempHex);
 TV.inY := hex_to_slv(TempHex, 64);
-REPORT "TVB: " & slv_to_hex(TV.inY);
+-- REPORT "TVB: " & slv_to_hex(TV.inY);
 READ(CurrentLine, TempChar);
 
 READ(CurrentLine, TempBit);
 TV.inC := TempBit;
-REPORT "TVCin: " & std_logic'image(TV.inC);
+-- REPORT "TVCin: " & std_logic'image(TV.inC);
 READ(CurrentLine, TempChar);
 
 READ(CurrentLine, TempHex);
 TV.outS := hex_to_slv(TempHex, 64);
-REPORT "TVS: " & slv_to_hex(TV.outS);
+-- REPORT "TVS: " & slv_to_hex(TV.outS);
 READ(CurrentLine, TempChar);
 
 READ(CurrentLine, TempBit);
 TV.outC := TempBit;
-REPORT "TVCout: " & std_logic'image(TV.outC);
+-- REPORT "TVCout: " & std_logic'image(TV.outC);
 READ(CurrentLine, TempChar);
 
 READ(CurrentLine, TempBit);
 TV.outOvfl := TempBit;
-REPORT "TVOvfl: " & std_logic'image(TV.outOvfl);
+-- REPORT "TVOvfl: " & std_logic'image(TV.outOvfl);
 
 -- Now, to actually care about the DUT.
 -- Apply 'X' to all input bits, hold for PreStimTime
@@ -135,7 +138,8 @@ WAIT FOR PostStimTime;
 
 -- Verify correct result
 IF DUT_S /= TV.outS THEN
-WRITE(TranscriptLine, string'("FAILURE: Overflow mismatch at Measurement #" & INTEGER'IMAGE(MeasurementIndex)));
+TVPassed := FALSE;
+WRITE(TranscriptLine, string'("FAILURE: Sum mismatch at Measurement #" & INTEGER'IMAGE(MeasurementIndex)));
 WRITELINE(OutputFile, TranscriptLine);
 WRITE(TranscriptLine, string'("Stimulus:"));
 WRITELINE(OutputFile, TranscriptLine);
@@ -159,7 +163,8 @@ REPORT
 "A: " & slv_to_hex(TV.inX)& NL &
 "B: " & slv_to_hex(TV.inY) & NL &
 "Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
-"Expected S: " & SLV_TO_HEX(TV.outS) & NL 
+"Expected S: " & slv_to_hex(TV.outS) & NL &
+"Actual S: " & slv_to_hex(DUT_S) 
 SEVERITY WARNING
 ;
 ELSE
@@ -170,7 +175,8 @@ END IF;
 
 
 IF DUT_Cout /= TV.outC THEN
-WRITE(TranscriptLine, string'("FAILURE: Overflow mismatch at Measurement #" & INTEGER'IMAGE(MeasurementIndex)));
+TVPassed := FALSE;
+WRITE(TranscriptLine, string'("FAILURE: Carryout mismatch at Measurement #" & INTEGER'IMAGE(MeasurementIndex)));
 WRITELINE(OutputFile, TranscriptLine);
 WRITE(TranscriptLine, string'("Stimulus:"));
 WRITELINE(OutputFile, TranscriptLine);
@@ -187,13 +193,14 @@ WRITELINE(OutputFile, TranscriptLine);
 WRITE(TranscriptLine, string'("Actual Cout: ") & INTEGER'IMAGE(conv_integer(DUT_Cout)));
 WRITELINE(OutputFile, TranscriptLine);
 ASSERT DUT_Cout = TV.outC REPORT
-"FAILURE: Carry mismatch" &
-"Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" &
+"FAILURE: Carry mismatch" & NL &
+"Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
 "Stimulus:" & NL &
 "A: " & slv_to_hex(TV.inX) & NL &
 "B: " & slv_to_hex(TV.inY) & NL &
 "Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
-"Expected Cout: " & INTEGER'IMAGE(conv_integer(TV.outC)) & NL
+"Expected Cout: " & INTEGER'IMAGE(conv_integer(TV.outC)) & NL &
+"Actual Cout: " & INTEGER'IMAGE(conv_integer(DUT_Cout))
 SEVERITY WARNING
 ;
 ELSE
@@ -203,6 +210,7 @@ END IF;
 
 
 IF DUT_Ovfl /= TV.outOvfl THEN
+TVPassed := FALSE;
 WRITE(TranscriptLine, string'("FAILURE: Overflow mismatch at Measurement #" & INTEGER'IMAGE(MeasurementIndex)));
 WRITELINE(OutputFile, TranscriptLine);
 WRITE(TranscriptLine, string'("Stimulus:"));
@@ -220,13 +228,14 @@ WRITELINE(OutputFile, TranscriptLine);
 WRITE(TranscriptLine, string'("Actual Ovfl: ") & INTEGER'IMAGE(conv_integer(DUT_Ovfl)));
 WRITELINE(OutputFile, TranscriptLine);
 ASSERT DUT_Ovfl = TV.outOvfl REPORT
-"FAILURE: Overflow mismatch" &
-"Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" &
+"FAILURE: Overflow mismatch" & NL &
+"Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
 "Stimulus:" & NL &
 "A: " & slv_to_hex(TV.inX) & NL &
 "B: " & slv_to_hex(TV.inY) & NL &
 "Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
-"Expected Ovfl: " & INTEGER'IMAGE(conv_integer(TV.outOvfl))
+"Expected Ovfl: " & INTEGER'IMAGE(conv_integer(TV.outOvfl)) & NL &
+"Actual Ovfl: " & INTEGER'IMAGE(conv_integer(DUT_Ovfl))
 SEVERITY WARNING
 ;
 ELSE
@@ -235,6 +244,11 @@ WRITELINE(OutputFile, TranscriptLine);
 END IF;
 
 
+IF TVPassed = FALSE THEN
+REPORT "Measurement #" & INTEGER'IMAGE(MeasurementIndex) & " Failed.";
+ELSE
+REPORT "Measurement #" & INTEGER'IMAGE(MeasurementIndex) & " Passed.";
+END IF;
 
 
 MeasurementIndex := MeasurementIndex + 1;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DP1
-Fri Feb 13 17:11:48 2026
+Fri Feb 13 18:53:07 2026
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -294,7 +294,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Feb 13 17:11:48 2026       ;
+; Analysis & Synthesis Status        ; Successful - Fri Feb 13 18:53:06 2026       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; DP1                                         ;
 ; Top-level Entity Name              ; CSAN                                        ;
@@ -3291,7 +3291,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Feb 13 17:11:39 2026
+    Info: Processing started: Fri Feb 13 18:52:57 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DP1 -c DP1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -3314,6 +3314,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file SourceC
 Info (12021): Found 2 design units, including 1 entities, in source file SourceCode/FA.vhd
     Info (12022): Found design unit 1: FA-LogicFuncFA File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd Line: 14
     Info (12023): Found entity 1: FA File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd Line: 3
+Info (12021): Found 2 design units, including 0 entities, in source file SourceCode/Utils.vhd
+    Info (12022): Found design unit 1: Utils File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd Line: 5
+    Info (12022): Found design unit 2: Utils-body File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd Line: 9
 Info (12127): Elaborating entity "CSAN" for the top level hierarchy
 Info (12129): Elaborating entity "CSAN" using architecture "A:logicfunccsan" for hierarchy "CSAN:\gen:left_half_upper" File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd Line: 23
 Info (12129): Elaborating entity "CSAN" using architecture "A:logicfunccsan" for hierarchy "CSAN:\gen:left_half_upper|CSAN:\gen:left_half_upper" File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd Line: 23
@@ -3332,9 +3335,9 @@ Info (21057): Implemented 446 device resources after synthesis - the final resou
     Info (21059): Implemented 65 output pins
     Info (21061): Implemented 252 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 438 megabytes
-    Info: Processing ended: Fri Feb 13 17:11:49 2026
+    Info: Peak virtual memory: 442 megabytes
+    Info: Processing ended: Fri Feb 13 18:53:07 2026
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Total CPU time (on all processors): 00:00:22
 
 
