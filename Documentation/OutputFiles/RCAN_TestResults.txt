@@ -1,4 +1,4 @@
-CSAN Test Results
+RCAN Test Results
 Sum: Measurement #1: passed
 Cout: Measurement #1: passed
 Ovfl: Measurement #1: passed
