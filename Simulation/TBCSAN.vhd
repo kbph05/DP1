@@ -70,7 +70,7 @@ PROCESS
 -- Name of transcript file
 VARIABLE TranscriptName : LINE;                    
 BEGIN
-WRITE(TranscriptName, string'("RCAN Test Results For") & time'image(now));
+WRITE(TranscriptName, string'("CSAN Test Results"));
 WRITELINE(OutputFile, TranscriptName);
 WAIT;
 END PROCESS init;
