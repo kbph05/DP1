@@ -12,7 +12,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 ** Warning: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 ** Warning: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 -- Loading entity RCAN
-** Warning: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBRCAN.vhd(74): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
 
 } {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -30,17 +29,20 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity Mux2cNb
 -- Compiling architecture LogicFuncMux2cNb of Mux2cNb
 
-} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd}
+} {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd} {2 {vcom -work work -2002 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity RippleAddr
--- Compiling architecture FastRipple of RippleAddr
--- Loading entity FullAddr
--- Compiling architecture Baseline of RippleAddr
--- Loading entity RippleAddr
+-- Loading package std_logic_arith
+-- Loading package std_logic_textio
+-- Loading package Utils
+-- Compiling entity TBCSAN
+-- Compiling architecture TestCSAN of TBCSAN
+** Warning: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/TBCSAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+-- Loading entity CSAN
 
 } {} {}} {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020

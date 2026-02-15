@@ -1,4 +1,4 @@
-RCAN Test Results For0 ps
+CSAN Test Results
 Sum: Measurement #1: passed
 Cout: Measurement #1: passed
 Ovfl: Measurement #1: passed
@@ -17,14 +17,7 @@ Ovfl: Measurement #5: passed
 Sum: Measurement #6: passed
 Cout: Measurement #6: passed
 Ovfl: Measurement #6: passed
-FAILURE: Sum mismatch at Measurement #7
-Stimulus:
-A: 1234567890ABCDEF
-B: 0FEDCBA987654321
-Cin: 0
-Outputs:
-Expected Sum: 2222222222222110
-Actual Sum: 2222222218111110
+Sum: Measurement #7: passed
 Cout: Measurement #7: passed
 Ovfl: Measurement #7: passed
 Sum: Measurement #8: passed
@@ -51,14 +44,7 @@ Ovfl: Measurement #14: passed
 Sum: Measurement #15: passed
 Cout: Measurement #15: passed
 Ovfl: Measurement #15: passed
-FAILURE: Sum mismatch at Measurement #16
-Stimulus:
-A: 0000000080000000
-B: 0000000080000000
-Cin: 0
-Outputs:
-Expected Sum: 0000000000000000
-Actual Sum: 0000000100000000
+Sum: Measurement #16: passed
 Cout: Measurement #16: passed
 Ovfl: Measurement #16: passed
 Sum: Measurement #17: passed
@@ -66,11 +52,4 @@ Cout: Measurement #17: passed
 Ovfl: Measurement #17: passed
 Sum: Measurement #18: passed
 Cout: Measurement #18: passed
-FAILURE: Overflow mismatch at Measurement #18
-Stimulus:
-A: 4000000000000000
-B: 4000000000000000
-Cin: 0
-Outputs:
-Expected Ovfl: 0
-Actual Ovfl: 1
+Ovfl: Measurement #18: passed
