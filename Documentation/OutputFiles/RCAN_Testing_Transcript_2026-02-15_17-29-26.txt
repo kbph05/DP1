@@ -1,10 +1,10 @@
-# End time: 17:25:32 on Feb 15,2026, Elapsed time: 0:03:40
-# Errors: 1, Warnings: 1
-# vsim -c TBRCAN -l ../Documentation/OutputFiles/RCAN_Testing_Transcript_2026-02-15_17-25-31.txt -do "
+# End time: 17:29:26 on Feb 15,2026, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 1
+# vsim -c TBRCAN -l ../Documentation/OutputFiles/RCAN_Testing_Transcript_2026-02-15_17-29-26.txt -do "
 #     do waveRCAN.do  
 #     run -all      
 #     " 
-# Start time: 17:25:32 on Feb 15,2026
+# Start time: 17:29:26 on Feb 15,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)

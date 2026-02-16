@@ -37,7 +37,7 @@ END RECORD TestVectorOp;
 
 -- Files
 FILE InputFile: TEXT OPEN READ_MODE IS "./TestVectors/" & TestVectorFile; 
-FILE OutputFile: TEXT OPEN WRITE_MODE IS "../Documentation/OutputFiles/RCAN_LatestTestResults.txt";
+-- FILE OutputFile: TEXT OPEN WRITE_MODE IS "../Documentation/OutputFiles/RCAN_LatestTestResults.txt";
 
 
 -- Signals
@@ -68,10 +68,11 @@ Ovfl => DUT_Ovfl
 init: 
 PROCESS
 -- Name of transcript file
+-- This is scrapped now.
 VARIABLE TranscriptName : LINE;                    
 BEGIN
 WRITE(TranscriptName, string'("RCAN Test Results of Latest Run"));
-WRITELINE(OutputFile, TranscriptName);
+-- WRITELINE(OutputFile, TranscriptName);
 WAIT;
 END PROCESS init;
 
