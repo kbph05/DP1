@@ -1,5 +1,5 @@
 Flow report for DP1
-Sat Feb 14 19:39:35 2026
+Sun Feb 15 16:51:29 2026
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -38,26 +38,32 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Flow Summary                                                                     ;
-+------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Feb 14 19:39:33 2026       ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                      ; DP1                                         ;
-; Top-level Entity Name              ; CSAN                                        ;
-; Family                             ; Cyclone IV E                                ;
-; Device                             ; EP4CE115F29C7                               ;
-; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 291 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 291 / 114,480 ( < 1 % )                     ;
-;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 195 / 529 ( 37 % )                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
-+------------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------------+
+; Flow Summary                                                                    ;
++-----------------------------------+---------------------------------------------+
+; Flow Status                       ; Successful - Sun Feb 15 16:51:28 2026       ;
+; Quartus Prime Version             ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                     ; DP1                                         ;
+; Top-level Entity Name             ; RCAN                                        ;
+; Family                            ; Arria II GX                                 ;
+; Device                            ; EP2AGX45DF29C6                              ;
+; Timing Models                     ; Final                                       ;
+; Logic utilization                 ; < 1 %                                       ;
+;     Combinational ALUTs           ; 133 / 36,100 ( < 1 % )                      ;
+;     Memory ALUTs                  ; 0 / 18,050 ( 0 % )                          ;
+;     Dedicated logic registers     ; 0 / 36,100 ( 0 % )                          ;
+; Total registers                   ; 0                                           ;
+; Total pins                        ; 195 / 404 ( 48 % )                          ;
+; Total virtual pins                ; 0                                           ;
+; Total block memory bits           ; 0 / 2,939,904 ( 0 % )                       ;
+; DSP block 18-bit elements         ; 0 / 232 ( 0 % )                             ;
+; Total GXB Receiver Channel PCS    ; 0 / 8 ( 0 % )                               ;
+; Total GXB Receiver Channel PMA    ; 0 / 8 ( 0 % )                               ;
+; Total GXB Transmitter Channel PCS ; 0 / 8 ( 0 % )                               ;
+; Total GXB Transmitter Channel PMA ; 0 / 8 ( 0 % )                               ;
+; Total PLLs                        ; 0 / 4 ( 0 % )                               ;
+; Total DLLs                        ; 0 / 2 ( 0 % )                               ;
++-----------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -65,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/14/2026 19:39:18 ;
+; Start date & time ; 02/15/2026 16:51:15 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DP1                 ;
 +-------------------+---------------------+
@@ -76,21 +82,20 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 66017728304029.177112675853498         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 66017728304029.177120307561477         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; CSAN        ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; CSAN        ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; CSAN        ; Top                               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; RCAN        ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; RCAN        ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; RCAN        ; Top                               ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                    ; CSAN                                   ; DP1           ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                    ; RCAN                                   ; DP1           ; --          ; --                                ;
 ; VHDL_INPUT_VERSION                  ; VHDL_2008                              ; VHDL_1993     ; --          ; --                                ;
 ; VHDL_SHOW_LMF_MAPPING_MESSAGES      ; Off                                    ; --            ; --          ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
@@ -101,11 +106,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 465 MB              ; 00:00:13                           ;
-; Fitter               ; 00:00:06     ; 1.0                     ; 1585 MB             ; 00:00:11                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 364 MB              ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.1                     ; 609 MB              ; 00:00:01                           ;
-; Total                ; 00:00:15     ; --                      ; --                  ; 00:00:27                           ;
+; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 513 MB              ; 00:00:11                           ;
+; Fitter               ; 00:00:06     ; 1.0                     ; 1617 MB             ; 00:00:08                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 472 MB              ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 679 MB              ; 00:00:01                           ;
+; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

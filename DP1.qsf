@@ -37,17 +37,16 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Cyclone IV E"
-set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY CSAN
+set_global_assignment -name FAMILY "Arria II GX"
+set_global_assignment -name DEVICE EP2AGX45DF29C6
+set_global_assignment -name TOP_LEVEL_ENTITY RCAN
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 25.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:29:34  JANUARY 26, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 2
 set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
@@ -61,10 +60,10 @@ set_global_assignment -name VHDL_FILE SourceCode/Mux2cNb.vhd
 set_global_assignment -name VHDL_FILE SourceCode/Mux2c1b.vhd
 set_global_assignment -name VHDL_FILE SourceCode/FullAddr.vhd
 set_global_assignment -name VHDL_FILE SourceCode/FA.vhd
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE SourceCode/Utils.vhd -library work
 set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
 set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

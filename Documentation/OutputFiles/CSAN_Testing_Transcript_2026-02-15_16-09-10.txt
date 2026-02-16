@@ -1,0 +1,50 @@
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 16:09:10 on Feb 15,2026
+vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-09-10.txt ../SourceCode/CSAN.vhd ../SourceCode/FA.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CSAN
+-- Compiling architecture LogicFuncCSAN of CSAN
+-- Loading entity Mux2cNb
+-- Loading entity FA
+-- Compiling entity FA
+-- Compiling architecture LogicFuncFA of FA
+-- Loading package NUMERIC_STD
+-- Compiling entity FullAddr
+-- Compiling architecture behavioural of FullAddr
+-- Compiling entity Mux2c1b
+-- Compiling architecture LogicFunc of Mux2c1b
+-- Compiling entity Mux2cNb
+-- Compiling architecture LogicFuncMux2cNb of Mux2cNb
+-- Compiling entity RCAN
+-- Compiling architecture Baseline of RCAN
+-- Loading entity FullAddr
+-- Compiling architecture FastRipple of RCAN
+-- Loading entity RCAN
+-- Compiling package Utils
+-- Compiling package body Utils
+-- Loading package Utils
+-- Loading package std_logic_arith
+-- Loading package std_logic_textio
+-- Loading package Utils
+-- Compiling entity TBCSAN
+-- Compiling architecture TestCSAN of TBCSAN
+** Warning: ./TBCSAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: ./TBCSAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+-- Loading entity CSAN
+** Warning: ./TBCSAN.vhd(193): (vcom-1083) Implicit array operator "/=" always returns TRUE (left length 512 is not equal to right length 0).
+** Warning: ./TBCSAN.vhd(241): (vcom-1083) Implicit array operator "/=" always returns TRUE (left length 512 is not equal to right length 0).
+** Error: ./TBCSAN.vhd(291): near "IF": syntax error
+** Error: ./TBCSAN.vhd(309): near "MeasurementIndex": (vcom-1576) expecting ';'.
+** Warning: ./TBCSAN.vhd(98): (vcom-1272) Length of expected is 512; length of actual is 0.
+** Warning: ./TBCSAN.vhd(145): (vcom-1272) Length of expected is 512; length of actual is 516.
+** Warning: ./TBCSAN.vhd(194): (vcom-1272) Length of expected is 512; length of actual is 513.
+** Warning: ./TBCSAN.vhd(196): (vcom-1272) Length of expected is 512; length of actual is 516.
+** Warning: ./TBCSAN.vhd(242): (vcom-1272) Length of expected is 512; length of actual is 513.
+** Warning: ./TBCSAN.vhd(244): (vcom-1272) Length of expected is 512; length of actual is 516.
+** Warning: ./TBCSAN.vhd(286): (vcom-1272) Length of expected is 512; length of actual is 0.
+** Warning: ./TBCSAN.vhd(288): (vcom-1272) Length of expected is 512; length of actual is 523.
+** Note: ./TBCSAN.vhd(324): VHDL Compiler exiting
+End time: 16:09:10 on Feb 15,2026, Elapsed time: 0:00:00
+Errors: 2, Warnings: 12
