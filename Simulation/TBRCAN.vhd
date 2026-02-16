@@ -88,7 +88,7 @@ VARIABLE TV: TestVectorOp;
 VARIABLE MeasurementIndex : INTEGER := 1;
 -- For holding each segment of the line to set the TV
 VARIABLE TempHex : STRING(1 to 16);
-VARIABLE ReasonStr : STRING(1 to 2048);
+VARIABLE ReasonStr : STRING(1 to 512);
 VARIABLE p : NATURAL := 1;
 VARIABLE TempBit : STD_LOGIC;
 VARIABLE TempChar : CHARACTER;
@@ -291,7 +291,7 @@ END IF;
 -- One-liner describing the test vector result
 IF TVPassed = FALSE THEN
 REPORT  "Measurement #" & INTEGER'IMAGE(MeasurementIndex) & " Failed." & 
-        " Reason:" & ReasonStr & 
+        " Reason:" & ReasonStr(1 to p-1) & 
         " Stimulus:" & 
         " [A: " & slv_to_hex(TV.inX) & 
         " B: " & slv_to_hex(TV.inY) &

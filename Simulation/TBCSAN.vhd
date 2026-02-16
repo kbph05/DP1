@@ -174,7 +174,7 @@ TVPassed := FALSE;
 -- "Actual S: " & slv_to_hex(DUT_S) 
 -- SEVERITY WARNING
 -- ;
-work.Utils.append(ReasonStr, p, "-|Sum Mismatch|-");
+work.Utils.append(ReasonStr, p, "-|Sum-Mismatch|-");
 -- REPORT ReasonStr(1 TO p-1);
 
 ELSE
@@ -224,7 +224,7 @@ TVPassed := FALSE;
 -- "Actual Cout: " & INTEGER'IMAGE(conv_integer(DUT_Cout))
 -- SEVERITY WARNING
 -- ;
-work.Utils.append(ReasonStr, p, "-|Cout Mismatch|-");
+work.Utils.append(ReasonStr, p, "-|Cout-Mismatch|-");
 -- REPORT ReasonStr(1 TO p-1);
 ELSE
 -- REPORT
@@ -271,7 +271,7 @@ TVPassed := FALSE;
 -- "Actual Ovfl: " & INTEGER'IMAGE(conv_integer(DUT_Ovfl))
 -- SEVERITY WARNING
 -- ;
-work.Utils.append(ReasonStr, p, "-|Ovfl Mismatch|-");
+work.Utils.append(ReasonStr, p, "-|Ovfl-Mismatch|-");
 -- REPORT ReasonStr(1 TO p-1);
 ELSE
 -- REPORT
@@ -290,7 +290,7 @@ END IF;
 -- One-liner describing the test vector result
 IF TVPassed = FALSE THEN
 REPORT  "Measurement #" & INTEGER'IMAGE(MeasurementIndex) & " Failed." & 
-        " Reason:" & ReasonStr & 
+        " Reason:" & ReasonStr(1 to p-1) & 
         " Stimulus:" & 
         " [A: " & slv_to_hex(TV.inX) & 
         " B: " & slv_to_hex(TV.inY) &
