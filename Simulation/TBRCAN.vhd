@@ -225,6 +225,8 @@ TVPassed := FALSE;
 -- "Actual Cout: " & INTEGER'IMAGE(conv_integer(DUT_Cout))
 -- SEVERITY WARNING
 -- ;
+work.Utils.append(ReasonStr, p, "-|Cout Mismatch|-");
+-- REPORT ReasonStr(1 TO p-1);
 ELSE
 -- REPORT
 -- "SUCCESS: Cout match" & NL &
@@ -237,8 +239,7 @@ ELSE
 -- "Actual Cout: " & INTEGER'IMAGE(conv_integer(DUT_Cout));
 -- WRITE(TranscriptLine, string'("Cout: Measurement #" & INTEGER'IMAGE(MeasurementIndex) & ": passed"));
 -- WRITELINE(OutputFile, TranscriptLine);
-work.Utils.append(ReasonStr, p, "-|Cout Mismatch|-");
--- REPORT ReasonStr(1 TO p-1);
+
 END IF;
 
 

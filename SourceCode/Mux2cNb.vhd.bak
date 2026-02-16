@@ -1,11 +1,6 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
--- Mux2cNb entity:
--- N: Number of bits in inputs and output
--- C: Base case mux (should be 1, for 2-channel 1 bit MUX)
--- x1: operand 1 (selected when s = 0)
--- x2: operand 2 (selected when s = 0)
--- y: output
+
 ENTITY Mux2cNb IS
 GENERIC (N: NATURAL := 2;
 			C: NATURAL := 1);
@@ -17,7 +12,6 @@ END Mux2cNb;
 
 ARCHITECTURE LogicFuncMux2cNb OF Mux2cNb IS
 BEGIN
--- will generate N side by side 2-channel 1 bit muxes to create the 2-channel n bit mux
 gen: FOR i IN 0 TO N-1 GENERATE
 WITH s SELECT 
 y(i) <= 	x1(i) WHEN '0',

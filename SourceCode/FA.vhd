@@ -1,6 +1,13 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-ENTITY FA IS
+-- FA entity:
+-- C: For a full adder, this is 1. If an N-bit ripple carry adder is desired, set C to N.
+-- X: Operand 1 (A)
+-- Y: Operand 2 (B)
+-- Cin: Carry-in
+-- S: Sum
+-- Cout: Carry-out
+-- Ovfl: True if overflow occurred in the addition of signed operands
 GENERIC (
 C: NATURAL := 1
 );
@@ -25,5 +32,6 @@ gen1: FOR i IN 0 TO C-1 GENERATE
 
 END GENERATE gen1;
 Cout <= Couts(C);
+-- Ovfl logic here is Cn xor Cn-1 because we have access to all carries. Requires less gates.
 Ovfl <= Couts(C) XOR Couts(C-1);
 END LogicFuncFA;

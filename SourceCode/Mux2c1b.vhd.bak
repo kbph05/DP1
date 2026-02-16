@@ -1,8 +1,6 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 -- Trying to figure out how LUTs are programmed
--- Mux2c1b entity:
--- Standard 2-channel 1 bit mux. equation: y = s'x1 + sx2
 ENTITY Mux2c1b IS
 PORT (
 x1, x2 : IN STD_LOGIC;
