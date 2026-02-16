@@ -87,13 +87,16 @@ VARIABLE TV: TestVectorOp;
 VARIABLE MeasurementIndex : INTEGER := 1;
 -- For holding each segment of the line to set the TV
 VARIABLE TempHex : STRING(1 to 16);
-VARIABLE ReasonStr : STRING(1 to 512);
+VARIABLE ReasonStr : STRING(1 to 2048);
+VARIABLE p : NATURAL := 1;
 VARIABLE TempBit : STD_LOGIC;
 VARIABLE TempChar : CHARACTER;
 VARIABLE TVPassed : BOOLEAN;
 BEGIN
-ReasonStr := (others => ' ');  -- fills all 512 characters
 WHILE NOT ENDFILE(InputFile) LOOP
+ReasonStr := (OTHERS => ' ');  
+p := 1;
+
 TVPassed := TRUE;
 READLINE(InputFile, CurrentLine);
 
@@ -142,146 +145,177 @@ WAIT FOR PostStimTime;
 -- Verify correct result
 IF DUT_S /= TV.outS THEN
 TVPassed := FALSE;
-ReasonStr := ReasonStr & "Sum";
-REPORT ReasonStr;
-WRITE(TranscriptLine, string'("FAILURE: Sum mismatch at Measurement #" & INTEGER'IMAGE(MeasurementIndex)));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Stimulus:"));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("A: ") & slv_to_hex(TV.inX));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("B: ") & slv_to_hex(TV.inY));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Cin: ") & INTEGER'IMAGE(conv_integer(TV.inC)));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Outputs:"));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Expected Sum: ") & slv_to_hex(TV.outS));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Actual Sum: ") & slv_to_hex(DUT_S));
-WRITELINE(OutputFile, TranscriptLine);
-ASSERT DUT_S = TV.outS
-REPORT 
-"FAILURE: Sum mismatch" & NL &
-"Measurement #" & INTEGER'IMAGE(conv_integer(MeasurementIndex)) & ":" & NL &
-"Stimulus:" & NL &
-"A: " & slv_to_hex(TV.inX)& NL &
-"B: " & slv_to_hex(TV.inY) & NL &
-"Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
-"Expected S: " & slv_to_hex(TV.outS) & NL &
-"Actual S: " & slv_to_hex(DUT_S) 
-SEVERITY WARNING
-;
+
+-- WRITE(TranscriptLine, string'("FAILURE: Sum mismatch at Measurement #" & INTEGER'IMAGE(MeasurementIndex)));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Stimulus:"));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("A: ") & slv_to_hex(TV.inX));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("B: ") & slv_to_hex(TV.inY));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Cin: ") & INTEGER'IMAGE(conv_integer(TV.inC)));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Outputs:"));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Expected Sum: ") & slv_to_hex(TV.outS));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Actual Sum: ") & slv_to_hex(DUT_S));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- ASSERT DUT_S = TV.outS
+-- REPORT 
+-- "FAILURE: Sum mismatch" & NL &
+-- "Measurement #" & INTEGER'IMAGE(conv_integer(MeasurementIndex)) & ":" & NL &
+-- "Stimulus:" & NL &
+-- "A: " & slv_to_hex(TV.inX)& NL &
+-- "B: " & slv_to_hex(TV.inY) & NL &
+-- "Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
+-- "Expected S: " & slv_to_hex(TV.outS) & NL &
+-- "Actual S: " & slv_to_hex(DUT_S) 
+-- SEVERITY WARNING
+-- ;
+work.Utils.append(ReasonStr, p, "-|Sum Mismatch|-");
+-- REPORT ReasonStr(1 TO p-1);
+
 ELSE
-ReasonStr := ReasonStr & "Sum";
-REPORT ReasonStr;
-REPORT
-"SUCCESS: Sum match" & NL &
-"Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
-"Stimulus:" & NL &
-"A: " & slv_to_hex(TV.inX) & NL &
-"B: " & slv_to_hex(TV.inY) & NL &
-"Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
-"Expected S: " & slv_to_hex(TV.outS) & NL &
-"Actual S: " & slv_to_hex(DUT_S); 
-WRITE(TranscriptLine, string'("Sum: Measurement #" & INTEGER'IMAGE(MeasurementIndex) & ": passed"));
-WRITELINE(OutputFile, TranscriptLine);
+
+
+-- REPORT
+-- "SUCCESS: Sum match" & NL &
+-- "Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
+-- "Stimulus:" & NL &
+-- "A: " & slv_to_hex(TV.inX) & NL &
+-- "B: " & slv_to_hex(TV.inY) & NL &
+-- "Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
+-- "Expected S: " & slv_to_hex(TV.outS) & NL &
+-- "Actual S: " & slv_to_hex(DUT_S); 
+-- WRITE(TranscriptLine, string'("Sum: Measurement #" & INTEGER'IMAGE(MeasurementIndex) & ": passed"));
+-- WRITELINE(OutputFile, TranscriptLine);
 END IF;
 
 
 
 IF DUT_Cout /= TV.outC THEN
 TVPassed := FALSE;
-WRITE(TranscriptLine, string'("FAILURE: Carryout mismatch at Measurement #" & INTEGER'IMAGE(MeasurementIndex)));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Stimulus:"));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("A: ") & slv_to_hex(TV.inX));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("B: ") & slv_to_hex(TV.inY));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Cin: ") & INTEGER'IMAGE(conv_integer(TV.inC)));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Outputs:"));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Expected Cout: ") & INTEGER'IMAGE(conv_integer(TV.outC)));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Actual Cout: ") & INTEGER'IMAGE(conv_integer(DUT_Cout)));
-WRITELINE(OutputFile, TranscriptLine);
-ASSERT DUT_Cout = TV.outC REPORT
-"FAILURE: Carry mismatch" & NL &
-"Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
-"Stimulus:" & NL &
-"A: " & slv_to_hex(TV.inX) & NL &
-"B: " & slv_to_hex(TV.inY) & NL &
-"Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
-"Expected Cout: " & INTEGER'IMAGE(conv_integer(TV.outC)) & NL &
-"Actual Cout: " & INTEGER'IMAGE(conv_integer(DUT_Cout))
-SEVERITY WARNING
-;
+-- WRITE(TranscriptLine, string'("FAILURE: Carryout mismatch at Measurement #" & INTEGER'IMAGE(MeasurementIndex)));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Stimulus:"));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("A: ") & slv_to_hex(TV.inX));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("B: ") & slv_to_hex(TV.inY));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Cin: ") & INTEGER'IMAGE(conv_integer(TV.inC)));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Outputs:"));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Expected Cout: ") & INTEGER'IMAGE(conv_integer(TV.outC)));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Actual Cout: ") & INTEGER'IMAGE(conv_integer(DUT_Cout)));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- ASSERT DUT_Cout = TV.outC REPORT
+-- "FAILURE: Carry mismatch" & NL &
+-- "Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
+-- "Stimulus:" & NL &
+-- "A: " & slv_to_hex(TV.inX) & NL &
+-- "B: " & slv_to_hex(TV.inY) & NL &
+-- "Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
+-- "Expected Cout: " & INTEGER'IMAGE(conv_integer(TV.outC)) & NL &
+-- "Actual Cout: " & INTEGER'IMAGE(conv_integer(DUT_Cout))
+-- SEVERITY WARNING
+-- ;
 ELSE
-REPORT
-"SUCCESS: Cout match" & NL &
-"Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
-"Stimulus:" & NL &
-"A: " & slv_to_hex(TV.inX) & NL &
-"B: " & slv_to_hex(TV.inY) & NL &
-"Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
-"Expected Cout: " & INTEGER'IMAGE(conv_integer(TV.outC)) & NL &
-"Actual Cout: " & INTEGER'IMAGE(conv_integer(DUT_Cout));
-WRITE(TranscriptLine, string'("Cout: Measurement #" & INTEGER'IMAGE(MeasurementIndex) & ": passed"));
-WRITELINE(OutputFile, TranscriptLine);
+-- REPORT
+-- "SUCCESS: Cout match" & NL &
+-- "Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
+-- "Stimulus:" & NL &
+-- "A: " & slv_to_hex(TV.inX) & NL &
+-- "B: " & slv_to_hex(TV.inY) & NL &
+-- "Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
+-- "Expected Cout: " & INTEGER'IMAGE(conv_integer(TV.outC)) & NL &
+-- "Actual Cout: " & INTEGER'IMAGE(conv_integer(DUT_Cout));
+-- WRITE(TranscriptLine, string'("Cout: Measurement #" & INTEGER'IMAGE(MeasurementIndex) & ": passed"));
+-- WRITELINE(OutputFile, TranscriptLine);
+work.Utils.append(ReasonStr, p, "-|Cout Mismatch|-");
+-- REPORT ReasonStr(1 TO p-1);
 END IF;
 
 
 IF DUT_Ovfl /= TV.outOvfl THEN
 TVPassed := FALSE;
-WRITE(TranscriptLine, string'("FAILURE: Overflow mismatch at Measurement #" & INTEGER'IMAGE(MeasurementIndex)));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Stimulus:"));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("A: ") & slv_to_hex(TV.inX));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("B: ") & slv_to_hex(TV.inY));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Cin: ") & INTEGER'IMAGE(conv_integer(TV.inC)));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Outputs:"));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Expected Ovfl: ") & INTEGER'IMAGE(conv_integer(TV.outOvfl)));
-WRITELINE(OutputFile, TranscriptLine);
-WRITE(TranscriptLine, string'("Actual Ovfl: ") & INTEGER'IMAGE(conv_integer(DUT_Ovfl)));
-WRITELINE(OutputFile, TranscriptLine);
-ASSERT DUT_Ovfl = TV.outOvfl REPORT
-"FAILURE: Overflow mismatch" & NL &
-"Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
-"Stimulus:" & NL &
-"A: " & slv_to_hex(TV.inX) & NL &
-"B: " & slv_to_hex(TV.inY) & NL &
-"Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
-"Expected Ovfl: " & INTEGER'IMAGE(conv_integer(TV.outOvfl)) & NL &
-"Actual Ovfl: " & INTEGER'IMAGE(conv_integer(DUT_Ovfl))
-SEVERITY WARNING
-;
+-- WRITE(TranscriptLine, string'("FAILURE: Overflow mismatch at Measurement #" & INTEGER'IMAGE(MeasurementIndex)));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Stimulus:"));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("A: ") & slv_to_hex(TV.inX));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("B: ") & slv_to_hex(TV.inY));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Cin: ") & INTEGER'IMAGE(conv_integer(TV.inC)));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Outputs:"));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Expected Ovfl: ") & INTEGER'IMAGE(conv_integer(TV.outOvfl)));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- WRITE(TranscriptLine, string'("Actual Ovfl: ") & INTEGER'IMAGE(conv_integer(DUT_Ovfl)));
+-- WRITELINE(OutputFile, TranscriptLine);
+-- ASSERT DUT_Ovfl = TV.outOvfl REPORT
+-- "FAILURE: Overflow mismatch" & NL &
+-- "Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
+-- "Stimulus:" & NL &
+-- "A: " & slv_to_hex(TV.inX) & NL &
+-- "B: " & slv_to_hex(TV.inY) & NL &
+-- "Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
+-- "Expected Ovfl: " & INTEGER'IMAGE(conv_integer(TV.outOvfl)) & NL &
+-- "Actual Ovfl: " & INTEGER'IMAGE(conv_integer(DUT_Ovfl))
+-- SEVERITY WARNING
+-- ;
+work.Utils.append(ReasonStr, p, "-|Ovfl Mismatch|-");
+-- REPORT ReasonStr(1 TO p-1);
 ELSE
-REPORT
-"SUCCESS: Overflow match" & NL &
-"Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
-"Stimulus:" & NL &
-"A: " & slv_to_hex(TV.inX) & NL &
-"B: " & slv_to_hex(TV.inY) & NL &
-"Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
-"Expected Ovfl: " & INTEGER'IMAGE(conv_integer(TV.outOvfl)) & NL &
-"Actual Ovfl: " & INTEGER'IMAGE(conv_integer(DUT_Ovfl));
-WRITE(TranscriptLine, string'("Ovfl: Measurement #" & INTEGER'IMAGE(MeasurementIndex) & ": passed"));
-WRITELINE(OutputFile, TranscriptLine);
+-- REPORT
+-- "SUCCESS: Overflow match" & NL &
+-- "Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &
+-- "Stimulus:" & NL &
+-- "A: " & slv_to_hex(TV.inX) & NL &
+-- "B: " & slv_to_hex(TV.inY) & NL &
+-- "Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & NL &
+-- "Expected Ovfl: " & INTEGER'IMAGE(conv_integer(TV.outOvfl)) & NL &
+-- "Actual Ovfl: " & INTEGER'IMAGE(conv_integer(DUT_Ovfl));
+-- WRITE(TranscriptLine, string'("Ovfl: Measurement #" & INTEGER'IMAGE(MeasurementIndex) & ": passed"));
+-- WRITELINE(OutputFile, TranscriptLine);
 END IF;
 
-
+-- One-liner describing the test vector result
 IF TVPassed = FALSE THEN
-REPORT "Measurement #" & INTEGER'IMAGE(MeasurementIndex) & " Failed.";
+REPORT  "Measurement #" & INTEGER'IMAGE(MeasurementIndex) & " Failed." & 
+        " Reason:" & ReasonStr & 
+        " Stimulus:" & 
+        " [A: " & slv_to_hex(TV.inX) & 
+        " B: " & slv_to_hex(TV.inY) &
+        " Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & "]" &
+        " Expected Outputs:" & 
+        " [S: " & slv_to_hex(TV.outS) & 
+        " Cout: " & INTEGER'IMAGE(conv_integer(TV.outC)) &
+        " Ovfl: " & INTEGER'IMAGE(conv_integer(TV.outOvfl)) & "]" &
+        " Actual Outputs:" & 
+        " [S: " & slv_to_hex(DUT_S) & 
+        " Cout: " & INTEGER'IMAGE(conv_integer(TV.outOvfl)) &
+        " Ovfl: " & INTEGER'IMAGE(conv_integer(DUT_Ovfl)) & "]";
 ELSE
-REPORT "Measurement #" & INTEGER'IMAGE(MeasurementIndex) & " Passed.";
+REPORT  "Measurement #" & INTEGER'IMAGE(MeasurementIndex) & " Passed." & 
+        " Stimulus:" & 
+        " [A: " & slv_to_hex(TV.inX) & 
+        " B: " & slv_to_hex(TV.inY) &
+        " Cin: " & INTEGER'IMAGE(conv_integer(TV.inC)) & "]" &
+        " Expected Outputs:" & 
+        " [S: " & slv_to_hex(TV.outS) & 
+        " Cout: " & INTEGER'IMAGE(conv_integer(TV.outC)) &
+        " Ovfl: " & INTEGER'IMAGE(conv_integer(TV.outOvfl)) & "]" &
+        " Actual Outputs:" & 
+        " [S: " & slv_to_hex(DUT_S) & 
+        " Cout: " & INTEGER'IMAGE(conv_integer(TV.outOvfl)) &
+        " Ovfl: " & INTEGER'IMAGE(conv_integer(DUT_Ovfl)) & "]";
 END IF;
 
 

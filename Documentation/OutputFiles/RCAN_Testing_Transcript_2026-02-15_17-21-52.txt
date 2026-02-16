@@ -1,8 +1,10 @@
-# vsim -c TBCSAN -l ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-15-02.txt -do "
-#     do waveCSAN.do  
+# End time: 17:21:52 on Feb 15,2026, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 2
+# vsim -c TBRCAN -l ../Documentation/OutputFiles/RCAN_Testing_Transcript_2026-02-15_17-21-52.txt -do "
+#     do waveRCAN.do  
 #     run -all      
 #     " 
-# Start time: 16:15:02 on Feb 15,2026
+# Start time: 17:21:52 on Feb 15,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -10,30 +12,21 @@
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_textio(body)
 # Loading work.utils(body)
-# Loading work.tbcsan(testcsan)
-# ** Error: (vsim-13) Recompile work.csan(logicfunccsan) because work.mux2cnb, work.fa have changed.
-# Load interrupted
+# Loading work.tbrcan(testrcan)
+# ** Error: (vsim-3170) Could not find 'rcan(logicfuncrcan)'.
+#         Searched libraries:
+#             /home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation/work
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
-# MACRO ./CSANfv.do PAUSED at line 85
-# Compile of Mux2c1b.vhd was successful.
-# Compile of Mux2cNb.vhd was successful.
-# Compile of FA.vhd was successful.
-# Compile of FullAddr.vhd was successful.
-# Compile of Utils.vhd was successful.
-# Compile of RCAN.vhd was successful.
-# Compile of CSAN.vhd was successful.
-# Compile of TBRCAN.vhd was successful with warnings.
-# Compile of TBCSAN.vhd was successful with warnings.
-# 9 compiles, 0 failed with no errors.
-do CSANfv.do
+# MACRO ./RCANfv.do PAUSED at line 85
+do RCANfv.do
 # 
-# Capturing output into transcript file: ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-15-31.txt
+# Capturing output into transcript file: ../Documentation/OutputFiles/RCAN_Testing_Transcript_2026-02-15_17-22-55.txt
 # 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:15:31 on Feb 15,2026
-# vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-15-31.txt ../SourceCode/CSAN.vhd ../SourceCode/FA.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
+# Start time: 17:22:55 on Feb 15,2026
+# vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/RCAN_Testing_Transcript_2026-02-15_17-22-55.txt ../SourceCode/CSAN.vhd ../SourceCode/FA.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -53,8 +46,6 @@ do CSANfv.do
 # -- Compiling entity RCAN
 # -- Compiling architecture Baseline of RCAN
 # -- Loading entity FullAddr
-# -- Compiling architecture FastRipple of RCAN
-# -- Loading entity RCAN
 # -- Compiling package Utils
 # -- Compiling package body Utils
 # -- Loading package Utils
@@ -66,12 +57,10 @@ do CSANfv.do
 # ** Warning: ./TBCSAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: ./TBCSAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # -- Loading entity CSAN
-# ** Warning: ./TBCSAN.vhd(144): (vcom-1272) Length of expected is 512; length of actual is 515.
-# ** Warning: ./TBCSAN.vhd(175): (vcom-1272) Length of expected is 512; length of actual is 515.
 # -- Compiling entity TBRCAN
 # -- Compiling architecture TestRCAN of TBRCAN
 # ** Warning: ./TBRCAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: ./TBRCAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # -- Loading entity RCAN
-# End time: 16:15:31 on Feb 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 6
+# End time: 17:22:55 on Feb 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
