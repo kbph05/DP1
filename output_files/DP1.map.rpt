@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DP1
-Sun Feb 15 16:51:20 2026
+Sun Feb 15 20:07:32 2026
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status       ; Successful - Sun Feb 15 16:51:20 2026       ;
+; Analysis & Synthesis Status       ; Successful - Sun Feb 15 20:07:32 2026       ;
 ; Quartus Prime Version             ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                     ; DP1                                         ;
 ; Top-level Entity Name             ; RCAN                                        ;
@@ -362,7 +362,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Feb 15 16:51:15 2026
+    Info: Processing started: Sun Feb 15 20:07:22 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DP1 -c DP1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -370,20 +370,20 @@ Info (12021): Found 2 design units, including 1 entities, in source file SourceC
     Info (12022): Found design unit 1: RCAN-Baseline File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd Line: 26
     Info (12023): Found entity 1: RCAN File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/RCAN.vhd Line: 12
 Info (12021): Found 2 design units, including 1 entities, in source file SourceCode/CSAN.vhd
-    Info (12022): Found design unit 1: CSAN-LogicFuncCSAN File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd Line: 14
-    Info (12023): Found entity 1: CSAN File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd Line: 3
+    Info (12022): Found design unit 1: CSAN-LogicFuncCSAN File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd Line: 23
+    Info (12023): Found entity 1: CSAN File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/CSAN.vhd Line: 12
 Info (12021): Found 2 design units, including 1 entities, in source file SourceCode/Mux2cNb.vhd
-    Info (12022): Found design unit 1: Mux2cNb-LogicFuncMux2cNb File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd Line: 13
-    Info (12023): Found entity 1: Mux2cNb File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd Line: 4
+    Info (12022): Found design unit 1: Mux2cNb-LogicFuncMux2cNb File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd Line: 18
+    Info (12023): Found entity 1: Mux2cNb File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2cNb.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file SourceCode/Mux2c1b.vhd
-    Info (12022): Found design unit 1: Mux2c1b-LogicFunc File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd Line: 12
-    Info (12023): Found entity 1: Mux2c1b File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd Line: 4
+    Info (12022): Found design unit 1: Mux2c1b-LogicFunc File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd Line: 14
+    Info (12023): Found entity 1: Mux2c1b File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Mux2c1b.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file SourceCode/FullAddr.vhd
     Info (12022): Found design unit 1: FullAddr-behavioural File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FullAddr.vhd Line: 17
     Info (12023): Found entity 1: FullAddr File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FullAddr.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file SourceCode/FA.vhd
-    Info (12022): Found design unit 1: FA-LogicFuncFA File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd Line: 15
-    Info (12023): Found entity 1: FA File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd Line: 3
+    Info (12022): Found design unit 1: FA-LogicFuncFA File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd Line: 23
+    Info (12023): Found entity 1: FA File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/FA.vhd Line: 11
 Info (12021): Found 2 design units, including 0 entities, in source file SourceCode/Utils.vhd
     Info (12022): Found design unit 1: Utils File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd Line: 5
     Info (12022): Found design unit 2: Utils-body File: /home/kanez/Useful/Spring 2026/ENSC 350/DP1/SourceCode/Utils.vhd Line: 11
@@ -398,8 +398,8 @@ Info (21057): Implemented 328 device resources after synthesis - the final resou
     Info (21061): Implemented 133 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 513 megabytes
-    Info: Processing ended: Sun Feb 15 16:51:20 2026
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Processing ended: Sun Feb 15 20:07:32 2026
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:25
 
 

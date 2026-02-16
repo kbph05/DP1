@@ -8,6 +8,7 @@ USE ieee.std_logic_1164.all;
 -- S: Sum
 -- Cout: Carry-out
 -- Ovfl: True if overflow occurred in the addition of signed operands
+ENTITY FA IS
 GENERIC (
 C: NATURAL := 1
 );
