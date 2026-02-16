@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DP1
-Sun Feb 15 20:07:32 2026
+Sun Feb 15 20:14:41 2026
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,118 +41,111 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                    ;
-+-----------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status       ; Successful - Sun Feb 15 20:07:32 2026       ;
-; Quartus Prime Version             ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                     ; DP1                                         ;
-; Top-level Entity Name             ; RCAN                                        ;
-; Family                            ; Arria II GX                                 ;
-; Logic utilization                 ; N/A                                         ;
-;     Combinational ALUTs           ; 133                                         ;
-;     Memory ALUTs                  ; 0                                           ;
-;     Dedicated logic registers     ; 0                                           ;
-; Total registers                   ; 0                                           ;
-; Total pins                        ; 195                                         ;
-; Total virtual pins                ; 0                                           ;
-; Total block memory bits           ; 0                                           ;
-; DSP block 18-bit elements         ; 0                                           ;
-; Total GXB Receiver Channel PCS    ; 0                                           ;
-; Total GXB Receiver Channel PMA    ; 0                                           ;
-; Total GXB Transmitter Channel PCS ; 0                                           ;
-; Total GXB Transmitter Channel PMA ; 0                                           ;
-; Total PLLs                        ; 0                                           ;
-; Total DLLs                        ; 0                                           ;
-+-----------------------------------+---------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Feb 15 20:14:41 2026       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; DP1                                         ;
+; Top-level Entity Name              ; RCAN                                        ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 155                                         ;
+;     Total combinational functions  ; 155                                         ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 195                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                          ; Setting            ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; EP2AGX45DF29C6     ;                    ;
-; Top-level entity name                                                           ; RCAN               ; DP1                ;
-; Family name                                                                     ; Arria II GX        ; Cyclone V          ;
-; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
-; VHDL Version                                                                    ; VHDL_2008          ; VHDL_1993          ;
-; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
-; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
-; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; State Machine Processing                                                        ; Auto               ; Auto               ;
-; Safe State Machine                                                              ; Off                ; Off                ;
-; Extract Verilog State Machines                                                  ; On                 ; On                 ;
-; Extract VHDL State Machines                                                     ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
-; Parallel Synthesis                                                              ; On                 ; On                 ;
-; DSP Block Balancing                                                             ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                 ; On                 ;
-; Power-Up Don't Care                                                             ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                              ; 70                 ; 70                 ;
-; Auto Carry Chains                                                               ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
-; Auto ROM Replacement                                                            ; On                 ; On                 ;
-; Auto RAM Replacement                                                            ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
-; Strict RAM Replacement                                                          ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
-; Auto RAM Block Balancing                                                        ; On                 ; On                 ;
-; Auto RAM to Logic Cell Conversion                                               ; Off                ; Off                ;
-; Auto Resource Sharing                                                           ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
-; Report Parameter Settings                                                       ; On                 ; On                 ;
-; Report Source Assignments                                                       ; On                 ; On                 ;
-; Report Connectivity Checks                                                      ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
-; HDL message level                                                               ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
-; Clock MUX Protection                                                            ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
-; Block Design Naming                                                             ; Auto               ; Auto               ;
-; SDC constraint protection                                                       ; Off                ; Off                ;
-; Synthesis Effort                                                                ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; RCAN               ; DP1                ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; VHDL Show LMF Mapping Messages                                   ; Off                ;                    ;
+; VHDL Version                                                     ; VHDL_2008          ; VHDL_1993          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
 
 
 +------------------------------------------+
@@ -181,125 +174,109 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                ;
-+-----------------------------------------------+----------------------------+
-; Resource                                      ; Usage                      ;
-+-----------------------------------------------+----------------------------+
-; Estimated ALUTs Used                          ; 133                        ;
-;     -- Combinational ALUTs                    ; 133                        ;
-;     -- Memory ALUTs                           ; 0                          ;
-;     -- LUT_REGs                               ; 0                          ;
-; Dedicated logic registers                     ; 0                          ;
-;                                               ;                            ;
-; Estimated ALUTs Unavailable                   ; 33                         ;
-;     -- Due to unpartnered combinational logic ; 33                         ;
-;     -- Due to Memory ALUTs                    ; 0                          ;
-;                                               ;                            ;
-; Total combinational functions                 ; 133                        ;
-; Combinational ALUT usage by number of inputs  ;                            ;
-;     -- 7 input functions                      ; 0                          ;
-;     -- 6 input functions                      ; 33                         ;
-;     -- 5 input functions                      ; 24                         ;
-;     -- 4 input functions                      ; 6                          ;
-;     -- <=3 input functions                    ; 70                         ;
-;                                               ;                            ;
-; Combinational ALUTs by mode                   ;                            ;
-;     -- normal mode                            ; 133                        ;
-;     -- extended LUT mode                      ; 0                          ;
-;     -- arithmetic mode                        ; 0                          ;
-;     -- shared arithmetic mode                 ; 0                          ;
-;                                               ;                            ;
-; Estimated ALUT/register pairs used            ; 166                        ;
-;                                               ;                            ;
-; Total registers                               ; 0                          ;
-;     -- Dedicated logic registers              ; 0                          ;
-;     -- I/O registers                          ; 0                          ;
-;     -- LUT_REGs                               ; 0                          ;
-;                                               ;                            ;
-;                                               ;                            ;
-; I/O pins                                      ; 195                        ;
-;                                               ;                            ;
-; DSP block 18-bit elements                     ; 0                          ;
-;                                               ;                            ;
-; Maximum fan-out node                          ; FullAddr:\gen0:1:U1|Cout~0 ;
-; Maximum fan-out                               ; 4                          ;
-; Total fan-out                                 ; 780                        ;
-; Average fan-out                               ; 1.49                       ;
-+-----------------------------------------------+----------------------------+
++------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                      ;
++---------------------------------------------+--------------------+
+; Resource                                    ; Usage              ;
++---------------------------------------------+--------------------+
+; Estimated Total logic elements              ; 155                ;
+;                                             ;                    ;
+; Total combinational functions               ; 155                ;
+; Logic element usage by number of LUT inputs ;                    ;
+;     -- 4 input functions                    ; 52                 ;
+;     -- 3 input functions                    ; 64                 ;
+;     -- <=2 input functions                  ; 39                 ;
+;                                             ;                    ;
+; Logic elements by mode                      ;                    ;
+;     -- normal mode                          ; 155                ;
+;     -- arithmetic mode                      ; 0                  ;
+;                                             ;                    ;
+; Total registers                             ; 0                  ;
+;     -- Dedicated logic registers            ; 0                  ;
+;     -- I/O registers                        ; 0                  ;
+;                                             ;                    ;
+; I/O pins                                    ; 195                ;
+;                                             ;                    ;
+; Embedded Multiplier 9-bit elements          ; 0                  ;
+;                                             ;                    ;
+; Maximum fan-out node                        ; FullAddr:U0|Cout~0 ;
+; Maximum fan-out                             ; 3                  ;
+; Total fan-out                               ; 739                ;
+; Average fan-out                             ; 1.36               ;
++---------------------------------------------+--------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                           ;
-+----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+----------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+----------------------------+-------------+--------------+
-; |RCAN                      ; 133 (1)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 195  ; 0            ; |RCAN                      ; RCAN        ; work         ;
-;    |FullAddr:U0|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:U0          ; FullAddr    ; work         ;
-;    |FullAddr:U3|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:U3          ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:10:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:10:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:11:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:11:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:12:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:12:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:13:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:13:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:14:U1|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:14:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:15:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:15:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:16:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:16:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:17:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:17:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:18:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:18:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:19:U1|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:19:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:1:U1|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:1:U1  ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:20:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:20:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:21:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:21:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:22:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:22:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:23:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:23:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:24:U1|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:24:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:25:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:25:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:26:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:26:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:27:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:27:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:28:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:28:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:29:U1|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:29:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:2:U1|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:2:U1  ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:30:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:30:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:31:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:31:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:32:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:32:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:33:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:33:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:34:U1|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:34:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:35:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:35:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:36:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:36:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:37:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:37:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:38:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:38:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:39:U1|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:39:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:3:U1|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:3:U1  ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:40:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:40:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:41:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:41:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:42:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:42:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:43:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:43:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:44:U1|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:44:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:45:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:45:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:46:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:46:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:47:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:47:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:48:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:48:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:49:U1|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:49:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:4:U1|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:4:U1  ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:50:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:50:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:51:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:51:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:52:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:52:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:53:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:53:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:54:U1|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:54:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:55:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:55:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:56:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:56:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:57:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:57:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:58:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:58:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:59:U1|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:59:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:5:U1|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:5:U1  ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:60:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:60:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:61:U1|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:61:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:62:U1|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:62:U1 ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:6:U1|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:6:U1  ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:7:U1|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:7:U1  ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:8:U1|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:8:U1  ; FullAddr    ; work         ;
-;    |FullAddr:\gen0:9:U1|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:9:U1  ; FullAddr    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+----------------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                             ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+-------------+--------------+
+; |RCAN                      ; 155 (1)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 195  ; 0            ; |RCAN                      ; RCAN        ; work         ;
+;    |FullAddr:U0|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:U0          ; FullAddr    ; work         ;
+;    |FullAddr:U3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:U3          ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:10:U1|  ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:10:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:11:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:11:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:12:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:12:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:13:U1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:13:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:14:U1|  ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:14:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:15:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:15:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:16:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:16:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:17:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:17:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:18:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:18:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:19:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:19:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:1:U1|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:1:U1  ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:20:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:20:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:21:U1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:21:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:22:U1|  ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:22:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:23:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:23:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:24:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:24:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:25:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:25:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:26:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:26:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:27:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:27:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:28:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:28:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:29:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:29:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:2:U1|   ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:2:U1  ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:30:U1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:30:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:31:U1|  ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:31:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:32:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:32:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:33:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:33:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:34:U1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:34:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:35:U1|  ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:35:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:36:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:36:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:37:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:37:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:38:U1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:38:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:39:U1|  ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:39:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:3:U1|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:3:U1  ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:40:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:40:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:41:U1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:41:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:42:U1|  ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:42:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:43:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:43:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:44:U1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:44:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:45:U1|  ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:45:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:46:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:46:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:47:U1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:47:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:48:U1|  ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:48:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:49:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:49:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:4:U1|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:4:U1  ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:50:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:50:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:51:U1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:51:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:52:U1|  ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:52:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:53:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:53:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:54:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:54:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:55:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:55:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:56:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:56:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:57:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:57:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:58:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:58:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:59:U1|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:59:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:5:U1|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:5:U1  ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:60:U1|  ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:60:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:61:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:61:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:62:U1|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:62:U1 ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:6:U1|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:6:U1  ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:7:U1|   ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:7:U1  ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:8:U1|   ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:8:U1  ; FullAddr    ; work         ;
+;    |FullAddr:\gen0:9:U1|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RCAN|FullAddr:\gen0:9:U1  ; FullAddr    ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -334,16 +311,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 195                         ;
-; stratixiv_lcell_comb  ; 133                         ;
-;     normal            ; 133                         ;
-;         2 data inputs ; 33                          ;
-;         3 data inputs ; 37                          ;
-;         4 data inputs ; 6                           ;
-;         5 data inputs ; 24                          ;
-;         6 data inputs ; 33                          ;
+; cycloneiii_lcell_comb ; 155                         ;
+;     normal            ; 155                         ;
+;         2 data inputs ; 39                          ;
+;         3 data inputs ; 64                          ;
+;         4 data inputs ; 52                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 26.00                       ;
-; Average LUT depth     ; 14.90                       ;
+; Max LUT depth         ; 51.00                       ;
+; Average LUT depth     ; 29.80                       ;
 +-----------------------+-----------------------------+
 
 
@@ -352,7 +327,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -362,7 +337,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Feb 15 20:07:22 2026
+    Info: Processing started: Sun Feb 15 20:14:32 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DP1 -c DP1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -392,14 +367,14 @@ Info (12129): Elaborating entity "FullAddr" using architecture "A:behavioural" f
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 328 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 350 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 129 input pins
     Info (21059): Implemented 66 output pins
-    Info (21061): Implemented 133 logic cells
+    Info (21061): Implemented 155 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 513 megabytes
-    Info: Processing ended: Sun Feb 15 20:07:32 2026
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Peak virtual memory: 451 megabytes
+    Info: Processing ended: Sun Feb 15 20:14:41 2026
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:24
 
 

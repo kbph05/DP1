@@ -1,0 +1,216 @@
+/*************************************************************************/
+/* CycloneIVRCAN START */
+/* Baseline Device: Ripple Carry Adder on the EP4CE115F29C7 FPGA */
+/*************************************************************************/
+/*************************************************************************/
+/* EP4CE115F29C7 RCAN map.summary
+/*************************************************************************/
+
+Analysis & Synthesis Status : Successful - Sun Feb 15 20:14:41 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : DP1
+Top-level Entity Name : RCAN
+Family : Cyclone IV E
+Total logic elements : 155
+    Total combinational functions : 155
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 195
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+/*************************************************************************/
+/* EP4CE115F29C7 RCAN fit.summary
+/*************************************************************************/
+
+Fitter Status : Successful - Sun Feb 15 20:14:53 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : DP1
+Top-level Entity Name : RCAN
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 155 / 114,480 ( < 1 % )
+    Total combinational functions : 155 / 114,480 ( < 1 % )
+    Dedicated logic registers : 0 / 114,480 ( 0 % )
+Total registers : 0
+Total pins : 195 / 529 ( 37 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+/*************************************************************************/
+/* CycloneIVRCAN END */
+/*************************************************************************/
+
+
+/*************************************************************************/
+/* CycloneIVCSAN START */
+/* Design Candidate 1: Conditional Sum Adder on the EP4CE115F29C7 FPGA */
+/*************************************************************************/
+/*************************************************************************/
+/* EP4CE115F29C7 CSAN map.summary
+/*************************************************************************/
+
+Analysis & Synthesis Status : Successful - Sun Feb 15 20:13:43 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : DP1
+Top-level Entity Name : CSAN
+Family : Cyclone IV E
+Total logic elements : 291
+    Total combinational functions : 291
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 195
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+
+/*************************************************************************/
+/* EP4CE115F29C7 CSAN fit.summary
+/*************************************************************************/
+
+Fitter Status : Successful - Sun Feb 15 20:13:56 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : DP1
+Top-level Entity Name : CSAN
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 291 / 114,480 ( < 1 % )
+    Total combinational functions : 291 / 114,480 ( < 1 % )
+    Dedicated logic registers : 0 / 114,480 ( 0 % )
+Total registers : 0
+Total pins : 195 / 529 ( 37 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+/*************************************************************************/
+/* CycloneIVCSAN END */
+/*************************************************************************/
+
+
+/*************************************************************************/
+/* Arria2RCAN START */
+/* Design Candidate 2: Ripple Carry Adder on the EP2AGX45DF29C6 FPGA */
+/*************************************************************************/
+/*************************************************************************/
+/* EP2AGX45DF29C6 RCAN map.summary
+/*************************************************************************/
+
+Analysis & Synthesis Status : Successful - Sun Feb 15 20:07:32 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : DP1
+Top-level Entity Name : RCAN
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 133
+    Memory ALUTs : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 195
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
+
+/*************************************************************************/
+/* EP2AGX45DF29C6 RCAN fit.summary
+/*************************************************************************/
+
+Fitter Status : Successful - Sun Feb 15 20:07:46 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : DP1
+Top-level Entity Name : RCAN
+Family : Arria II GX
+Device : EP2AGX45DF29C6
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 133 / 36,100 ( < 1 % )
+    Memory ALUTs : 0 / 18,050 ( 0 % )
+    Dedicated logic registers : 0 / 36,100 ( 0 % )
+Total registers : 0
+Total pins : 195 / 404 ( 48 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 2,939,904 ( 0 % )
+DSP block 18-bit elements : 0 / 232 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )
+/*************************************************************************/
+/* Arria2RCAN END */
+/*************************************************************************/
+
+
+/*************************************************************************/
+/* Arria2CSAN START */
+/* Design Candidate 3: Conditional Sum Adder on the EP2AGX45DF29C6 FPGA */
+/*************************************************************************/
+/*************************************************************************/
+/* EP2AGX45DF29C6 CSAN map.summary
+/*************************************************************************/
+
+Analysis & Synthesis Status : Successful - Sun Feb 15 20:11:50 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : DP1
+Top-level Entity Name : CSAN
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 209
+    Memory ALUTs : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 195
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
+
+/*************************************************************************/
+/* EP2AGX45DF29C6 CSAN fit.summary
+/*************************************************************************/
+
+Fitter Status : Successful - Sun Feb 15 20:12:04 2026
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : DP1
+Top-level Entity Name : CSAN
+Family : Arria II GX
+Device : EP2AGX45DF29C6
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 209 / 36,100 ( < 1 % )
+    Memory ALUTs : 0 / 18,050 ( 0 % )
+    Dedicated logic registers : 0 / 36,100 ( 0 % )
+Total registers : 0
+Total pins : 195 / 404 ( 48 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 2,939,904 ( 0 % )
+DSP block 18-bit elements : 0 / 232 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )
+/*************************************************************************/
+/* Arria2CSAN END */
+/*************************************************************************/
+
+

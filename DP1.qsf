@@ -37,8 +37,8 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Arria II GX"
-set_global_assignment -name DEVICE EP2AGX45DF29C6
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name TOP_LEVEL_ENTITY RCAN
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 25.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:29:34  JANUARY 26, 2026"
