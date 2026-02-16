@@ -100,7 +100,6 @@ p := 1;
 
 TVPassed := TRUE;
 READLINE(InputFile, CurrentLine);
-
 READ(CurrentLine, TempHex);
 TV.inX := hex_to_slv(TempHex, 64);
 -- REPORT "TVA: " & slv_to_hex(TV.inX);

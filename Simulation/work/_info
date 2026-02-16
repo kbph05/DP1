@@ -10,420 +10,420 @@ z2
 cModel Technology
 Z0 d/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation
 Ecsan
-Z1 w1771126756
+Z1 w1771206620
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 48
+!i122 62
 R0
 Z4 8../SourceCode/CSAN.vhd
 Z5 F../SourceCode/CSAN.vhd
 l0
-L3 1
-V:ZD^;JZl?RLchg3chNddb0
-!s100 Xa>]O^[^]WcYE9]Sn0f7g0
-Z6 OV;C;2020.1;71
+Z6 L12 1
+V6f:13cBd]nZGCZP8@Kfc51
+!s100 Zc39zO]cQ=QTRXg_iz=l40
+Z7 OV;C;2020.1;71
 33
-Z7 !s110 1771205366
+Z8 !s110 1771219940
 !i10b 1
-Z8 !s108 1771205366.000000
-Z9 !s90 -reportprogress|300|-2008|-logfile|../Documentation/OutputFiles/RCAN_Testing_Transcript_2026-02-15_17-29-26.txt|../SourceCode/CSAN.vhd|../SourceCode/FA.vhd|../SourceCode/FullAddr.vhd|../SourceCode/Mux2c1b.vhd|../SourceCode/Mux2cNb.vhd|../SourceCode/RCAN.vhd|../SourceCode/Utils.vhd|./TBCSAN.vhd|./TBRCAN.vhd|
-Z10 !s107 ./TBRCAN.vhd|./TBCSAN.vhd|../SourceCode/Utils.vhd|../SourceCode/RCAN.vhd|../SourceCode/Mux2cNb.vhd|../SourceCode/Mux2c1b.vhd|../SourceCode/FullAddr.vhd|../SourceCode/FA.vhd|../SourceCode/CSAN.vhd|
+Z9 !s108 1771219940.000000
+Z10 !s90 -reportprogress|300|-2008|-logfile|../Documentation/OutputFiles/RCAN_Testing_Transcript_2026-02-15_21-32-20.txt|../SourceCode/CSAN.vhd|../SourceCode/FA.vhd|../SourceCode/FullAddr.vhd|../SourceCode/Mux2c1b.vhd|../SourceCode/Mux2cNb.vhd|../SourceCode/RCAN.vhd|../SourceCode/Utils.vhd|./TBCSAN.vhd|./TBRCAN.vhd|
+Z11 !s107 ./TBRCAN.vhd|./TBCSAN.vhd|../SourceCode/Utils.vhd|../SourceCode/RCAN.vhd|../SourceCode/Mux2cNb.vhd|../SourceCode/Mux2c1b.vhd|../SourceCode/FullAddr.vhd|../SourceCode/FA.vhd|../SourceCode/CSAN.vhd|
 !i113 1
-Z11 o-2008
-Z12 tExplicit 1 CvgOpt 0
+Z12 o-2008
+Z13 tExplicit 1 CvgOpt 0
 Alogicfunccsan
-Z13 DEx4 work 2 fa 0 22 A;2zNb>lf[OgF<JVTK=7Q3
-Z14 DEx4 work 7 mux2cnb 0 22 `J2P5IOM1F:imDWZM88351
+Z14 DEx4 work 2 fa 0 22 eH3LnT0nVQ7lFTXMGL??L2
+Z15 DEx4 work 7 mux2cnb 0 22 ck]BPzKBHc]Lh[T71mz@l0
 R2
 R3
-Z15 DEx4 work 4 csan 0 22 :ZD^;JZl?RLchg3chNddb0
-!i122 48
-l22
-Z16 L14 64
-Z17 VnJ1=EMmgY>k8;z@haY9>]0
-Z18 !s100 BcA?zjOBlfDj2`_3]F77]0
-R6
-33
+Z16 DEx4 work 4 csan 0 22 6f:13cBd]nZGCZP8@Kfc51
+!i122 62
+l37
+Z17 L23 71
+Z18 VG<efgDHPDI6_Xz1U6bT082
+Z19 !s100 X2oU0h6`?Y2nUJYfY[EbZ0
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Efa
-Z19 w1771041483
+Z20 w1771214840
 R2
 R3
-!i122 48
+!i122 62
 R0
-Z20 8../SourceCode/FA.vhd
-Z21 F../SourceCode/FA.vhd
+Z21 8../SourceCode/FA.vhd
+Z22 F../SourceCode/FA.vhd
 l0
-L3 1
-VA;2zNb>lf[OgF<JVTK=7Q3
-!s100 BA37[9Y4:SZ33`Edc`b<;1
-R6
-33
+Z23 L11 1
+VeH3LnT0nVQ7lFTXMGL??L2
+!s100 ogQJ]EoRGf@hj_CFXNeVk0
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Alogicfuncfa
 R2
 R3
-R13
-!i122 48
-l18
-Z22 L15 15
-Z23 V?LDAcdH0939GI2BgZ]@h@1
-Z24 !s100 WhXHLGelEO5gZKHWKjTAQ2
-R6
-33
+R14
+!i122 62
+l26
+Z24 L23 16
+Z25 VH;[T][[B_2aGW]C43bbd11
+Z26 !s100 `Sha8T]?SZ0njA1Gk?^g53
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Efulladdr
-Z25 w1771030159
-Z26 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z27 w1771030159
+Z28 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R2
 R3
-!i122 48
+!i122 62
 R0
-Z27 8../SourceCode/FullAddr.vhd
-Z28 F../SourceCode/FullAddr.vhd
+Z29 8../SourceCode/FullAddr.vhd
+Z30 F../SourceCode/FullAddr.vhd
 l0
 L6 1
 Va_EGOLX=fZ>502PD;dZWg2
 !s100 IU5GiKWF3zF3jVh89<iK03
-R6
-33
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Abehavioural
-R26
+R28
 R2
 R3
-Z29 DEx4 work 8 fulladdr 0 22 a_EGOLX=fZ>502PD;dZWg2
-!i122 48
+Z31 DEx4 work 8 fulladdr 0 22 a_EGOLX=fZ>502PD;dZWg2
+!i122 62
 l18
-Z30 L17 5
-Z31 VkXiNJME<zb_UCGc1@3bZ70
-Z32 !s100 XRJCm9m@[LMY4V;:8=:@z3
-R6
-33
+Z32 L17 5
+Z33 VkXiNJME<zb_UCGc1@3bZ70
+Z34 !s100 XRJCm9m@[LMY4V;:8=:@z3
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Emux2c1b
-Z33 w1770076646
+Z35 w1771206770
 R2
 R3
-!i122 48
+!i122 62
 R0
-Z34 8../SourceCode/Mux2c1b.vhd
-Z35 F../SourceCode/Mux2c1b.vhd
+Z36 8../SourceCode/Mux2c1b.vhd
+Z37 F../SourceCode/Mux2c1b.vhd
 l0
-L4 1
-Vh@U4ZhX<0m@cEhRT@B36a0
-!s100 h24c4TMo6[=^T74n5JfIl3
-R6
-33
+L6 1
+VnIzmk]ldCGKbdLIob9NJ_2
+!s100 DI11>Z@lKAEZ5Il[?_jb10
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Alogicfunc
 R2
 R3
-Z36 DEx4 work 7 mux2c1b 0 22 h@U4ZhX<0m@cEhRT@B36a0
-!i122 48
-l13
-Z37 L12 9
-Z38 Vg36L;=iW:dUbK:nKW9nR<2
-Z39 !s100 fE:W^[geHDG_:QK=A5i@12
-R6
-33
+Z38 DEx4 work 7 mux2c1b 0 22 nIzmk]ldCGKbdLIob9NJ_2
+!i122 62
+l15
+Z39 L14 9
+Z40 VeR8^h7VE[SZ:kFdD2WA;k2
+Z41 !s100 6F=VBC=Z[P;EhX@LB77ZH2
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Emux2cnb
-Z40 w1770078255
+Z42 w1771206724
 R2
 R3
-!i122 48
+!i122 62
 R0
-Z41 8../SourceCode/Mux2cNb.vhd
-Z42 F../SourceCode/Mux2cNb.vhd
+Z43 8../SourceCode/Mux2cNb.vhd
+Z44 F../SourceCode/Mux2cNb.vhd
 l0
-L4 1
-V`J2P5IOM1F:imDWZM88351
-!s100 zmg8R4N5cgGO:a[E`@23T3
-R6
-33
+L9 1
+Vck]BPzKBHc]Lh[T71mz@l0
+!s100 <ccmmmRPB2]olhQ9<TjiY3
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Alogicfuncmux2cnb
 R2
 R3
-R14
-!i122 48
-l14
-Z43 L13 12
-Z44 VV6URE`E29hMzj=RV=G3Za3
-Z45 !s100 oF8kWnRlNPd[T^I2fgH5i2
-R6
-33
+R15
+!i122 62
+l19
+Z45 L18 13
+Z46 V[6Z2Q5N>>0>Aie^SM7eM]2
+Z47 !s100 ^@0Q>Ek41GIMF6DEZSKPW2
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Ercan
-Z46 w1771205200
-R26
+Z48 w1771205200
+R28
 R2
 R3
-!i122 48
+!i122 62
 R0
-Z47 8../SourceCode/RCAN.vhd
-Z48 F../SourceCode/RCAN.vhd
+Z49 8../SourceCode/RCAN.vhd
+Z50 F../SourceCode/RCAN.vhd
 l0
-L12 1
+R6
 VZN6lMd:Oih^JPhT_1hO5T1
 !s100 `ED3hkO3;>EzHPc8@Y5;>2
-R6
-33
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Abaseline
-R29
-R26
+R31
+R28
 R2
 R3
-Z49 DEx4 work 4 rcan 0 22 ZN6lMd:Oih^JPhT_1hO5T1
-!i122 48
+Z51 DEx4 work 4 rcan 0 22 ZN6lMd:Oih^JPhT_1hO5T1
+!i122 62
 l31
-Z50 L26 17
-Z51 VAe8d=Sb3NDKX;8Z0HSC_91
-Z52 !s100 P`=BR3Z2<lGYgXji?_Vze1
-R6
-33
+Z52 L26 17
+Z53 VAe8d=Sb3NDKX;8Z0HSC_91
+Z54 !s100 P`=BR3Z2<lGYgXji?_Vze1
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Afastripple
-R26
+R28
 R2
 R3
-R49
+R51
 !i122 13
 l47
 L45 14
 Vd6Z:KkSB^gEmfCnj^:;8P2
 !s100 nUfFO1M6TjhFY>^h6D9:k2
-R6
+R7
 33
 !s110 1771201474
 !i10b 1
 !s108 1771201474.000000
 !s90 -reportprogress|300|-2008|-logfile|../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-24-34.txt|../SourceCode/CSAN.vhd|../SourceCode/FA.vhd|../SourceCode/FullAddr.vhd|../SourceCode/Mux2c1b.vhd|../SourceCode/Mux2cNb.vhd|../SourceCode/RCAN.vhd|../SourceCode/Utils.vhd|./TBCSAN.vhd|./TBRCAN.vhd|
-R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 w1771120461
 Etbcsan
-Z53 w1771205345
-Z54 DPx4 work 5 utils 0 22 ?O:FI^4XPQ=oB:HlQPJ^H1
-Z55 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
-Z56 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-R26
+Z55 w1771219774
+Z56 DPx4 work 5 utils 0 22 ?O:FI^4XPQ=oB:HlQPJ^H1
+Z57 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z58 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R28
 R2
 R3
-!i122 48
+!i122 62
 R0
-Z57 8./TBCSAN.vhd
-Z58 F./TBCSAN.vhd
+Z59 8./TBCSAN.vhd
+Z60 F./TBCSAN.vhd
 l0
-Z59 L14 1
+Z61 L14 1
 VaT6^Dneg3Z`@k?13`o^MY2
 !s100 bjzghQbE3QV:>A0`8bin@1
-R6
-33
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Atestcsan
-R15
-R54
-R55
+R16
 R56
-R26
+R57
+R58
+R28
 R2
 R3
-Z60 DEx4 work 6 tbcsan 0 22 aT6^Dneg3Z`@k?13`o^MY2
-!i122 48
+Z62 DEx4 work 6 tbcsan 0 22 aT6^Dneg3Z`@k?13`o^MY2
+!i122 62
 l56
-Z61 L18 321
-Z62 VkfCG3aBB>l>dRRS<G8MEJ0
-Z63 !s100 J0GFYihY<A?Y`D0z@WTRO3
-R6
-33
+Z63 L18 321
+Z64 Vb]1zUPS>cGWfk`e9Qk];n2
+Z65 !s100 ?JATKKnDD?@C6>>Df?gXN3
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Etbrcan
-Z64 w1771205354
-R54
-R55
+Z66 w1771207705
 R56
-R26
+R57
+R58
+R28
 R2
 R3
-!i122 48
+!i122 62
 R0
-Z65 8./TBRCAN.vhd
-Z66 F./TBRCAN.vhd
+Z67 8./TBRCAN.vhd
+Z68 F./TBRCAN.vhd
 l0
-R59
+R61
 Vz3Bc3^faM[U03]H0>`@G:2
 !s100 1Khbn:Qkn[B3Pig^gR9442
-R6
-33
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Atestrcan
-R49
-R54
-R55
+R51
 R56
-R26
+R57
+R58
+R28
 R2
 R3
-Z67 DEx4 work 6 tbrcan 0 22 z3Bc3^faM[U03]H0>`@G:2
-!i122 48
+Z69 DEx4 work 6 tbrcan 0 22 z3Bc3^faM[U03]H0>`@G:2
+!i122 62
 l56
-R61
-Z68 VBgJ7eBzE]34Q?o7:G2`5T3
-Z69 !s100 H2eU^WWKh[LQVlVFUTdRc0
-R6
-33
+Z70 L18 322
+Z71 VzWXbF]:]J?Z6oe[m<SkY50
+Z72 !s100 4lM8Sc6WWXQC^DHZXGP^60
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Putils
-R26
+R28
 R2
 R3
-!i122 48
-Z70 w1771203670
+!i122 62
+Z73 w1771206047
 R0
-Z71 8../SourceCode/Utils.vhd
-Z72 F../SourceCode/Utils.vhd
+Z74 8../SourceCode/Utils.vhd
+Z75 F../SourceCode/Utils.vhd
 l0
 L5 1
 V?O:FI^4XPQ=oB:HlQPJ^H1
 !s100 ^f8N=4T]TmZF7l>dZdmL23
-R6
+R7
 33
 b1
-R7
-!i10b 1
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13
 Bbody
-R54
-R26
+R56
+R28
 R2
 R3
-!i122 48
+!i122 62
 l0
-Z73 L11 1
-Z74 VW2Kk>[9D7nPgKY4gAha2b0
-Z75 !s100 4Jh2b9AkEh4bQG4QBPXJ02
-R6
-33
+R23
+Z76 VJoNek7MgUazHB^d>JO[=G3
+Z77 !s100 8AUE@LcklOXJ;1UB@PJb73
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
+R13

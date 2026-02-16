@@ -1,13 +1,10 @@
-# Loading project ModelSim_DP1
-# reading /home/kanez/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
-# Loading project ModelSim_DP1
-do CSANfv.do
+# do CSANfv.do
 # 
-# Capturing output into transcript file: ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-21-47.txt
+# Capturing output into transcript file: ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_21-26-32.txt
 # 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:21:47 on Feb 15,2026
-# vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-21-47.txt ../SourceCode/CSAN.vhd ../SourceCode/FA.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
+# Start time: 21:26:32 on Feb 15,2026
+# vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_21-26-32.txt ../SourceCode/CSAN.vhd ../SourceCode/FA.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -27,8 +24,6 @@ do CSANfv.do
 # -- Compiling entity RCAN
 # -- Compiling architecture Baseline of RCAN
 # -- Loading entity FullAddr
-# -- Compiling architecture FastRipple of RCAN
-# -- Loading entity RCAN
 # -- Compiling package Utils
 # -- Compiling package body Utils
 # -- Loading package Utils
@@ -40,12 +35,10 @@ do CSANfv.do
 # ** Warning: ./TBCSAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: ./TBCSAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # -- Loading entity CSAN
-# ** Warning: ./TBCSAN.vhd(144): (vcom-1272) Length of expected is 512; length of actual is 515.
-# ** Warning: ./TBCSAN.vhd(175): (vcom-1272) Length of expected is 512; length of actual is 515.
 # -- Compiling entity TBRCAN
 # -- Compiling architecture TestRCAN of TBRCAN
 # ** Warning: ./TBRCAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: ./TBRCAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # -- Loading entity RCAN
-# End time: 16:21:47 on Feb 15,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 6
+# End time: 21:26:32 on Feb 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
