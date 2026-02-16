@@ -1,0 +1,17 @@
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 16:18:05 on Feb 15,2026
+vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-18-05.txt ../SourceCode/CSAN.vhd ../SourceCode/FA.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CSAN
+-- Compiling architecture LogicFuncCSAN of CSAN
+** Error: (vcom-11) Could not find work.mux2cnb.
+** Error (suppressible): ../SourceCode/CSAN.vhd(38): (vcom-1195) Cannot find expanded name "work.Mux2cNb".
+** Error: ../SourceCode/CSAN.vhd(38): Unknown expanded name.
+** Error: (vcom-11) Could not find work.fa.
+** Error (suppressible): ../SourceCode/CSAN.vhd(67): (vcom-1195) Cannot find expanded name "work.FA".
+** Error: ../SourceCode/CSAN.vhd(67): Unknown expanded name.
+** Note: ../SourceCode/CSAN.vhd(77): VHDL Compiler exiting
+End time: 16:18:05 on Feb 15,2026, Elapsed time: 0:00:00
+Errors: 6, Warnings: 0

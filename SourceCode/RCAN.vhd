@@ -42,17 +42,17 @@ begin
 end architecture;
 
 -- Synthesized ripple adder:
-architecture FastRipple of RCAN is
-
-begin
-PROCESS(X, Y)
-VARIABLE tempS : STD_LOGIC_VECTOR(N DOWNTO 0);
-BEGIN
-tempS := std_logic_vector((resize(unsigned(X), N+1) + resize(unsigned(Y),N+1) + resize( ( unsigned( std_logic_vector'('0' & Cin)) ),N+1 )   ) );
-Ovfl <= (X(N-1) AND Y(N-1) AND (NOT tempS((N-1)))) OR (NOT (X(N-1)) AND (NOT Y(N-1)) AND (tempS((N-1))));
-S <= tempS(N-1 DOWNTO 0);
-Cout <= tempS(N);
-END PROCESS;
-
-
-end architecture;
+--architecture FastRipple of RCAN is
+--
+--begin
+--PROCESS(X, Y)
+--VARIABLE tempS : STD_LOGIC_VECTOR(N DOWNTO 0);
+--BEGIN
+--tempS := std_logic_vector((resize(unsigned(X), N+1) + resize(unsigned(Y),N+1) + resize( ( unsigned( std_logic_vector'('0' & Cin)) ),N+1 )   ) );
+--Ovfl <= (X(N-1) AND Y(N-1) AND (NOT tempS((N-1)))) OR (NOT (X(N-1)) AND (NOT Y(N-1)) AND (tempS((N-1))));
+--S <= tempS(N-1 DOWNTO 0);
+--Cout <= tempS(N);
+--END PROCESS;
+--
+--
+--end architecture;

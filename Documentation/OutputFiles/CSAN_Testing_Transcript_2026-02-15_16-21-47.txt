@@ -1,0 +1,132 @@
+# vsim -c TBCSAN -l ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-21-47.txt -do "
+#     do waveCSAN.do  
+#     run -all      
+#     " 
+# Start time: 16:21:47 on Feb 15,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.utils(body)
+# Loading work.tbcsan(testcsan)
+# Loading work.csan(logicfunccsan)
+# Loading work.fa(logicfuncfa)
+# Loading work.mux2cnb(logicfuncmux2cnb)
+# ** Warning: Design size of 111221 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# 
+#     do waveCSAN.do  
+#     run -all      
+#     
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 512 (1 to 512). Right is 515 (1 to 515).
+#    Time: 11 ns  Iteration: 0  Process: /tbcsan/main File: ./TBCSAN.vhd
+# Fatal error in Process main at ./TBCSAN.vhd line 175
+# 
+# HDL call sequence:
+# Stopped at ./TBCSAN.vhd 175 Process main
+# 
+do CSANfv.do
+# 
+# Capturing output into transcript file: ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-23-06.txt
+# 
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:23:06 on Feb 15,2026
+# vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-23-06.txt ../SourceCode/CSAN.vhd ../SourceCode/FA.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CSAN
+# -- Compiling architecture LogicFuncCSAN of CSAN
+# -- Loading entity Mux2cNb
+# -- Loading entity FA
+# -- Compiling entity FA
+# -- Compiling architecture LogicFuncFA of FA
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FullAddr
+# -- Compiling architecture behavioural of FullAddr
+# -- Compiling entity Mux2c1b
+# -- Compiling architecture LogicFunc of Mux2c1b
+# -- Compiling entity Mux2cNb
+# -- Compiling architecture LogicFuncMux2cNb of Mux2cNb
+# -- Compiling entity RCAN
+# -- Compiling architecture Baseline of RCAN
+# -- Loading entity FullAddr
+# -- Compiling architecture FastRipple of RCAN
+# -- Loading entity RCAN
+# -- Compiling package Utils
+# -- Compiling package body Utils
+# -- Loading package Utils
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Loading package Utils
+# -- Compiling entity TBCSAN
+# -- Compiling architecture TestCSAN of TBCSAN
+# ** Warning: ./TBCSAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: ./TBCSAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# -- Loading entity CSAN
+# ** Error (suppressible): ./TBCSAN.vhd(95): (vcom-1272) Length of expected is 512; length of actual is 0.
+# ** Warning: ./TBCSAN.vhd(145): (vcom-1272) Length of expected is 512; length of actual is 515.
+# ** Warning: ./TBCSAN.vhd(176): (vcom-1272) Length of expected is 512; length of actual is 515.
+# ** Note: ./TBCSAN.vhd(303): VHDL Compiler exiting
+# End time: 16:23:06 on Feb 15,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 4
+# ** Error: /home/kanez/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./CSANfv.do line 85
+# /home/kanez/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -2008 -logfile $transcript_file ../SourceCode/*.vhd ./*.vhd"
+#     invoked from within
+# "if {$capture_set == 1} {
+#     # 3. Compile all relevant sourcecode    
+#     vcom -2008 -logfile $transcript_file ../SourceCode/*.vhd ./*.vhd
+#     # 4. St..."
+do CSANfv.do
+# 
+# Capturing output into transcript file: ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-24-34.txt
+# 
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:24:34 on Feb 15,2026
+# vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-24-34.txt ../SourceCode/CSAN.vhd ../SourceCode/FA.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CSAN
+# -- Compiling architecture LogicFuncCSAN of CSAN
+# -- Loading entity Mux2cNb
+# -- Loading entity FA
+# -- Compiling entity FA
+# -- Compiling architecture LogicFuncFA of FA
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FullAddr
+# -- Compiling architecture behavioural of FullAddr
+# -- Compiling entity Mux2c1b
+# -- Compiling architecture LogicFunc of Mux2c1b
+# -- Compiling entity Mux2cNb
+# -- Compiling architecture LogicFuncMux2cNb of Mux2cNb
+# -- Compiling entity RCAN
+# -- Compiling architecture Baseline of RCAN
+# -- Loading entity FullAddr
+# -- Compiling architecture FastRipple of RCAN
+# -- Loading entity RCAN
+# -- Compiling package Utils
+# -- Compiling package body Utils
+# -- Loading package Utils
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Loading package Utils
+# -- Compiling entity TBCSAN
+# -- Compiling architecture TestCSAN of TBCSAN
+# ** Warning: ./TBCSAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: ./TBCSAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# -- Loading entity CSAN
+# ** Warning: ./TBCSAN.vhd(145): (vcom-1272) Length of expected is 512; length of actual is 515.
+# ** Warning: ./TBCSAN.vhd(176): (vcom-1272) Length of expected is 512; length of actual is 515.
+# -- Compiling entity TBRCAN
+# -- Compiling architecture TestRCAN of TBRCAN
+# ** Warning: ./TBRCAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: ./TBRCAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# -- Loading entity RCAN
+# End time: 16:24:34 on Feb 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6

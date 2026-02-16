@@ -80,16 +80,19 @@ PROCESS
 -- Line we are currently processing
 VARIABLE CurrentLine: LINE;
 VARIABLE TranscriptLine: LINE;
+
 -- The TestVector+
 VARIABLE TV: TestVectorOp;
 -- Index
 VARIABLE MeasurementIndex : INTEGER := 1;
 -- For holding each segment of the line to set the TV
 VARIABLE TempHex : STRING(1 to 16);
+VARIABLE ReasonStr : STRING(1 to 512);
 VARIABLE TempBit : STD_LOGIC;
 VARIABLE TempChar : CHARACTER;
 VARIABLE TVPassed : BOOLEAN;
 BEGIN
+ReasonStr := (others => ' ');  -- fills all 512 characters
 WHILE NOT ENDFILE(InputFile) LOOP
 TVPassed := TRUE;
 READLINE(InputFile, CurrentLine);
@@ -139,6 +142,8 @@ WAIT FOR PostStimTime;
 -- Verify correct result
 IF DUT_S /= TV.outS THEN
 TVPassed := FALSE;
+ReasonStr := ReasonStr & "Sum";
+REPORT ReasonStr;
 WRITE(TranscriptLine, string'("FAILURE: Sum mismatch at Measurement #" & INTEGER'IMAGE(MeasurementIndex)));
 WRITELINE(OutputFile, TranscriptLine);
 WRITE(TranscriptLine, string'("Stimulus:"));
@@ -168,6 +173,8 @@ REPORT
 SEVERITY WARNING
 ;
 ELSE
+ReasonStr := ReasonStr & "Sum";
+REPORT ReasonStr;
 REPORT
 "SUCCESS: Sum match" & NL &
 "Measurement #" & integer'image(conv_integer(MeasurementIndex)) & ":" & NL &

@@ -1,0 +1,77 @@
+# vsim -c TBCSAN -l ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-15-02.txt -do "
+#     do waveCSAN.do  
+#     run -all      
+#     " 
+# Start time: 16:15:02 on Feb 15,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.utils(body)
+# Loading work.tbcsan(testcsan)
+# ** Error: (vsim-13) Recompile work.csan(logicfunccsan) because work.mux2cnb, work.fa have changed.
+# Load interrupted
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./CSANfv.do PAUSED at line 85
+# Compile of Mux2c1b.vhd was successful.
+# Compile of Mux2cNb.vhd was successful.
+# Compile of FA.vhd was successful.
+# Compile of FullAddr.vhd was successful.
+# Compile of Utils.vhd was successful.
+# Compile of RCAN.vhd was successful.
+# Compile of CSAN.vhd was successful.
+# Compile of TBRCAN.vhd was successful with warnings.
+# Compile of TBCSAN.vhd was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+do CSANfv.do
+# 
+# Capturing output into transcript file: ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-15-31.txt
+# 
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:31 on Feb 15,2026
+# vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-02-15_16-15-31.txt ../SourceCode/CSAN.vhd ../SourceCode/FA.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CSAN
+# -- Compiling architecture LogicFuncCSAN of CSAN
+# -- Loading entity Mux2cNb
+# -- Loading entity FA
+# -- Compiling entity FA
+# -- Compiling architecture LogicFuncFA of FA
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FullAddr
+# -- Compiling architecture behavioural of FullAddr
+# -- Compiling entity Mux2c1b
+# -- Compiling architecture LogicFunc of Mux2c1b
+# -- Compiling entity Mux2cNb
+# -- Compiling architecture LogicFuncMux2cNb of Mux2cNb
+# -- Compiling entity RCAN
+# -- Compiling architecture Baseline of RCAN
+# -- Loading entity FullAddr
+# -- Compiling architecture FastRipple of RCAN
+# -- Loading entity RCAN
+# -- Compiling package Utils
+# -- Compiling package body Utils
+# -- Loading package Utils
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Loading package Utils
+# -- Compiling entity TBCSAN
+# -- Compiling architecture TestCSAN of TBCSAN
+# ** Warning: ./TBCSAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: ./TBCSAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# -- Loading entity CSAN
+# ** Warning: ./TBCSAN.vhd(144): (vcom-1272) Length of expected is 512; length of actual is 515.
+# ** Warning: ./TBCSAN.vhd(175): (vcom-1272) Length of expected is 512; length of actual is 515.
+# -- Compiling entity TBRCAN
+# -- Compiling architecture TestRCAN of TBRCAN
+# ** Warning: ./TBRCAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: ./TBRCAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# -- Loading entity RCAN
+# End time: 16:15:31 on Feb 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
