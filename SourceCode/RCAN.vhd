@@ -22,7 +22,7 @@ port (
 );
 end RCAN;
 
--- FastRipple Adder
+-- Baseline Adder
 architecture Baseline of RCAN is
 
 signal carries : std_logic_vector(N-1 downto 0);
@@ -37,8 +37,8 @@ begin
 		end generate gen0;
 --		S[63:
 		U3 : entity work.FullAddr(behavioural) port map(X => X(N-1), Y => Y(N-1), Cin => carries(N-2), S => S(N-1), Cout => tempC);
-		Cout <= tempC;
-		Ovfl <= tempC XOR carries(N-2);
+		Cout <= tempC; --Carry out
+		Ovfl <= tempC XOR carries(N-2); -- Overflow
 end architecture;
 
 -- Synthesized ripple adder:
