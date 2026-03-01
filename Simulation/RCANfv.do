@@ -62,8 +62,8 @@ if {$capture_set == 1} {
 
 if {$capture_set == 1} {
     # 3. Compile all relevant sourcecode  
-    vcom -2008 ../SourceCode/Mux2cNb.vhd
-    vcom -2008 ../SourceCode/FA.vhd      
+    vcom -2008 ../SourceCode/Mux2c1b.vhd
+    vcom -2008 ../SourceCode/Mux2cNb.vhd   
     vcom -2008 -logfile $transcript_file ../SourceCode/*.vhd ./*.vhd
     # 4. Start a simulation of the appropriate testbench
     # -c: console mode: runs vsim without gui
@@ -75,9 +75,9 @@ if {$capture_set == 1} {
     run -all      
     }
 } else {
-    # 3. Compile all relevant sourcecode    
+    # 3. Compile all relevant sourcecode  
+    vcom -2008 ../SourceCode/Mux2c1b.vhd
     vcom -2008 ../SourceCode/Mux2cNb.vhd
-    vcom -2008 ../SourceCode/FA.vhd    
     vcom -2008 ../SourceCode/*.vhd  
     vcom -2008 ./*.vhd
     # 4. Start a simulation of the appropriate testbench

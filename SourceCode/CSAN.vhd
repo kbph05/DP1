@@ -86,8 +86,7 @@ END GENERATE gen;
 genbase: IF N <= C GENERATE
 	-- Use base full adder
 	base_case_fa:	
-		ENTITY work.FA(LogicFuncFA) 
-		GENERIC MAP (C => N)
-		PORT MAP(X=>X(C-1 DOWNTO 0), Y=>Y(C-1 DOWNTO 0), S=>S(C-1 DOWNTO 0), Cin => Cin, Cout => Cout, Ovfl => Ovfl);
+		ENTITY work.FullAddr(behavioural) 
+		PORT MAP(X=>X(0), Y=>Y(0), S=>S(0), Cin => Cin, Cout => Cout, Ovfl => Ovfl);
 END GENERATE genbase;
 END LogicFuncCSAN;
