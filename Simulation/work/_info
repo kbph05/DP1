@@ -10,10 +10,10 @@ z2
 cModel Technology
 Z0 d/home/kanez/Useful/Spring 2026/ENSC 350/DP1/Simulation
 Ecsan
-Z1 w1772407909
+Z1 w1772411265
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 188
+!i122 194
 R0
 Z4 8../SourceCode/CSAN.vhd
 Z5 F../SourceCode/CSAN.vhd
@@ -23,10 +23,10 @@ V6f:13cBd]nZGCZP8@Kfc51
 !s100 Zc39zO]cQ=QTRXg_iz=l40
 Z7 OV;C;2020.1;71
 33
-Z8 !s110 1772410905
+Z8 !s110 1772412365
 !i10b 1
-Z9 !s108 1772410905.000000
-Z10 !s90 -reportprogress|300|-2008|-logfile|../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-03-01_16-21-45.txt|../SourceCode/CSAN.vhd|../SourceCode/FullAddr.vhd|../SourceCode/Mux2c1b.vhd|../SourceCode/Mux2cNb.vhd|../SourceCode/RCAN.vhd|../SourceCode/Utils.vhd|./TBCSAN.vhd|./TBRCAN.vhd|
+Z9 !s108 1772412365.000000
+Z10 !s90 -reportprogress|300|-2008|-logfile|../Documentation/OutputFiles/RCAN_Testing_Transcript_2026-03-01_16-46-05.txt|../SourceCode/CSAN.vhd|../SourceCode/FullAddr.vhd|../SourceCode/Mux2c1b.vhd|../SourceCode/Mux2cNb.vhd|../SourceCode/RCAN.vhd|../SourceCode/Utils.vhd|./TBCSAN.vhd|./TBRCAN.vhd|
 Z11 !s107 ./TBRCAN.vhd|./TBCSAN.vhd|../SourceCode/Utils.vhd|../SourceCode/RCAN.vhd|../SourceCode/Mux2cNb.vhd|../SourceCode/Mux2c1b.vhd|../SourceCode/FullAddr.vhd|../SourceCode/CSAN.vhd|
 !i113 1
 Z12 o-2008
@@ -38,11 +38,11 @@ Z16 DEx4 work 7 mux2cnb 0 22 ck]BPzKBHc]Lh[T71mz@l0
 R2
 R3
 Z17 DEx4 work 4 csan 0 22 6f:13cBd]nZGCZP8@Kfc51
-!i122 188
+!i122 194
 l37
-Z18 L23 70
-Z19 VR`ghhPnb28@dUVenX7fIj0
-Z20 !s100 6DC6k7LNfeO3ZaQN_9fQU0
+Z18 L23 67
+Z19 VoTL0`Da<_i4jlco0E01WR2
+Z20 !s100 dSEEAXEE6R6<GQ3l5S8L]1
 R7
 33
 R8
@@ -99,7 +99,7 @@ Z29 w1772407838
 R14
 R2
 R3
-!i122 188
+!i122 194
 R0
 Z30 8../SourceCode/FullAddr.vhd
 Z31 F../SourceCode/FullAddr.vhd
@@ -122,7 +122,7 @@ R14
 R2
 R3
 R15
-!i122 188
+!i122 194
 l19
 Z32 L18 6
 Z33 VaFaHe9SeE7EkRiVU`R7SR1
@@ -141,7 +141,7 @@ Emux2c1b
 Z35 w1771206770
 R2
 R3
-!i122 188
+!i122 194
 R0
 Z36 8../SourceCode/Mux2c1b.vhd
 Z37 F../SourceCode/Mux2c1b.vhd
@@ -163,7 +163,7 @@ Alogicfunc
 R2
 R3
 Z38 DEx4 work 7 mux2c1b 0 22 nIzmk]ldCGKbdLIob9NJ_2
-!i122 188
+!i122 194
 l15
 Z39 L14 9
 Z40 VeR8^h7VE[SZ:kFdD2WA;k2
@@ -182,7 +182,7 @@ Emux2cnb
 Z42 w1771206724
 R2
 R3
-!i122 188
+!i122 194
 R0
 Z43 8../SourceCode/Mux2cNb.vhd
 Z44 F../SourceCode/Mux2cNb.vhd
@@ -204,7 +204,7 @@ Alogicfuncmux2cnb
 R2
 R3
 R16
-!i122 188
+!i122 194
 l19
 Z45 L18 13
 Z46 V[6Z2Q5N>>0>Aie^SM7eM]2
@@ -220,11 +220,11 @@ R11
 R12
 R13
 Ercan
-Z48 w1772407675
+Z48 w1772412301
 R14
 R2
 R3
-!i122 188
+!i122 194
 R0
 Z49 8../SourceCode/RCAN.vhd
 Z50 F../SourceCode/RCAN.vhd
@@ -242,17 +242,17 @@ R11
 !i113 1
 R12
 R13
-Abaseline
+Alogicfuncrcan
 R15
 R14
 R2
 R3
 Z51 DEx4 work 4 rcan 0 22 ZN6lMd:Oih^JPhT_1hO5T1
-!i122 188
+!i122 194
 l31
 Z52 L26 17
-Z53 VAe8d=Sb3NDKX;8Z0HSC_91
-Z54 !s100 P`=BR3Z2<lGYgXji?_Vze1
+Z53 VgU0CUN=2>M4AG2o5W;2_72
+Z54 !s100 DT560KQ5c;b1E27;?a`?]3
 R7
 33
 R8
@@ -263,6 +263,28 @@ R11
 !i113 1
 R12
 R13
+Abaseline
+R15
+R14
+R2
+R3
+R51
+!i122 188
+l31
+R52
+VAe8d=Sb3NDKX;8Z0HSC_91
+!s100 P`=BR3Z2<lGYgXji?_Vze1
+R7
+33
+!s110 1772410905
+!i10b 1
+!s108 1772410905.000000
+!s90 -reportprogress|300|-2008|-logfile|../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-03-01_16-21-45.txt|../SourceCode/CSAN.vhd|../SourceCode/FullAddr.vhd|../SourceCode/Mux2c1b.vhd|../SourceCode/Mux2cNb.vhd|../SourceCode/RCAN.vhd|../SourceCode/Utils.vhd|./TBCSAN.vhd|./TBRCAN.vhd|
+R11
+!i113 1
+R12
+R13
+w1772407675
 Afastripple
 R14
 R2
@@ -292,7 +314,7 @@ Z58 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 R14
 R2
 R3
-!i122 188
+!i122 194
 R0
 Z59 8./TBCSAN.vhd
 Z60 F./TBCSAN.vhd
@@ -319,7 +341,7 @@ R14
 R2
 R3
 Z61 DEx4 work 6 tbcsan 0 22 >dD;:]Z=gRZWmM8I6M@1e3
-!i122 188
+!i122 194
 l45
 Z62 L15 170
 Z63 VQMhi:0]RkeiE;^a_Uz[HB3
@@ -335,14 +357,14 @@ R11
 R12
 R13
 Etbrcan
-Z65 w1772410866
+Z65 w1772412319
 R56
 R57
 R58
 R14
 R2
 R3
-!i122 188
+!i122 194
 R0
 Z66 8./TBRCAN.vhd
 Z67 F./TBRCAN.vhd
@@ -369,11 +391,11 @@ R14
 R2
 R3
 Z68 DEx4 work 6 tbrcan 0 22 0W]G0CY90[N9eT7@elfg]1
-!i122 188
+!i122 194
 l47
 Z69 L15 174
-Z70 V_eXSOT?A2DHF66Fz<=@`E3
-Z71 !s100 eW<PjaA:P1EInJRi4nYYe3
+Z70 V0F@kX?dMS1H9TJWFB:M903
+Z71 !s100 48P]CZPYoI>9RPh66kPZd2
 R7
 33
 R8
@@ -388,7 +410,7 @@ Putils
 R14
 R2
 R3
-!i122 188
+!i122 194
 Z72 w1771206047
 R0
 Z73 8../SourceCode/Utils.vhd
@@ -413,7 +435,7 @@ R56
 R14
 R2
 R3
-!i122 188
+!i122 194
 l0
 R24
 Z75 VJoNek7MgUazHB^d>JO[=G3

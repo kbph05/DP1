@@ -23,7 +23,7 @@ port (
 end RCAN;
 
 -- Baseline Adder
-architecture Baseline of RCAN is
+architecture LogicFuncRCAN of RCAN is
 
 signal carries : std_logic_vector(N-1 downto 0);
 signal tempC	: std_logic;
