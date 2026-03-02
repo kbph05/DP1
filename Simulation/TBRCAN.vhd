@@ -84,6 +84,8 @@ VARIABLE p : NATURAL := 1;
 VARIABLE TempBit : STD_LOGIC;
 VARIABLE TempChar : CHARACTER;
 VARIABLE TVPassed : BOOLEAN;
+VARIABLE PassedCount : INTEGER := 0;
+
 BEGIN
 WHILE NOT ENDFILE(InputFile) LOOP
 ReasonStr := (OTHERS => ' ');  
@@ -167,6 +169,7 @@ REPORT  "Measurement #" & INTEGER'IMAGE(MeasurementIndex) & " Failed." &
         " Cout: " & INTEGER'IMAGE(conv_integer(TV.outOvfl)) &
         " Ovfl: " & INTEGER'IMAGE(conv_integer(DUT_Ovfl)) & "]";
 ELSE
+PassedCount := PassedCount + 1;
 REPORT  "Measurement #" & INTEGER'IMAGE(MeasurementIndex) & " Passed." & 
         " Stimulus:" & 
         " [A: " & slv_to_hex(TV.inX) & 
@@ -183,6 +186,9 @@ REPORT  "Measurement #" & INTEGER'IMAGE(MeasurementIndex) & " Passed." &
 END IF;
 MeasurementIndex := MeasurementIndex + 1;
 END LOOP;
+REPORT  "Test Summary: " &
+        INTEGER'IMAGE(PassedCount) & " / " &
+        INTEGER'IMAGE(MeasurementIndex-1) & " tests passed!";
 WAIT;
 END PROCESS main;
 END TestRCAN;

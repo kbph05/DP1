@@ -123,3 +123,5 @@
 #    Time: 561 ns  Iteration: 0  Instance: /tbrcan
 # ** Note: Measurement #52 Passed. Stimulus: [A: 27134568A6A8FD69 B: 8FA4C4C3B7BC4D95 Cin: 1] Expected Outputs: [S: B6B80A2C5E654AFF Cout: 0 Ovfl: 0] Actual Outputs: [S: B6B80A2C5E654AFF Cout: 0 Ovfl: 0]
 #    Time: 572 ns  Iteration: 0  Instance: /tbrcan
+# End time: 18:20:57 on Mar 01,2026, Elapsed time: 0:04:33
+# Errors: 0, Warnings: 0

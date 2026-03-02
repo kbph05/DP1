@@ -74,7 +74,7 @@ gen: IF N > C GENERATE
 		);		
 		-- Lower half of sum bits
 		S((N-1)/2 DOWNTO 0) <= SR;
--- Ovfl logic: if X,Y are positive (MSB 0), and S is negative (MSB 1), then overflow has occurred. Likewise, overflow is true if X,Y are negative (MSB 1) and S is positive (MSB 0).
+--  logic: if X,Y are positive (MSB 0), and S is negative (MSB 1), then overflow has occurred. Likewise, overflow is true if X,Y are negative (MSB 1) and S is positive (MSB 0).
 Ovfl <= (X(N-1) AND Y(N-1) AND (NOT MuxResult((N-1)/2))) OR (NOT (X(N-1)) AND (NOT Y(N-1)) AND (MuxResult((N-1)/2)));
 
 END GENERATE gen;

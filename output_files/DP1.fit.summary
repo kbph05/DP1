@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sun Mar  1 17:36:30 2026
+Fitter Status : Successful - Sun Mar  1 18:51:26 2026
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : DP1
-Top-level Entity Name : RCAN
+Top-level Entity Name : CSAN
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 155 / 114,480 ( < 1 % )
-    Total combinational functions : 155 / 114,480 ( < 1 % )
+Total logic elements : 291 / 114,480 ( < 1 % )
+    Total combinational functions : 291 / 114,480 ( < 1 % )
     Dedicated logic registers : 0 / 114,480 ( 0 % )
 Total registers : 0
 Total pins : 195 / 529 ( 37 % )
