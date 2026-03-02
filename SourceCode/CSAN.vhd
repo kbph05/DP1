@@ -32,8 +32,8 @@ SIGNAL Ovfl0, Ovfl1: STD_LOGIC;
 SIGNAL Int0, Int1: STD_LOGIC_VECTOR((N+1)/2 DOWNTO 0);
 -- Result of N/2 + 1 bit MUX. Select bit is carry from right half, inputs are the intermediate signals
 SIGNAL MuxResult: STD_LOGIC_VECTOR((N+1)/2 DOWNTO 0);
--- Temporary Carryout, Overflow signals. (tempO not currently in use)
-SIGNAL tempC, tempO: STD_LOGIC;
+-- Temporary Carryout signal.
+SIGNAL tempC: STD_LOGIC;
 BEGIN
 -- C equals 1 for usage of standard full adders in base case. For non-leaf nodes, divide into left and right halves
 gen: IF N > C GENERATE
