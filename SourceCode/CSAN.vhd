@@ -60,9 +60,6 @@ gen: IF N > C GENERATE
 		Cout <= MuxResult((N+1)/2);
 		-- Upper half of sum bits
 		S(N-1 DOWNTO (N+1)/2) <= MuxResult((N-1)/2 DOWNTO 0);
-	--muxOvfl: 
-		--ENTITY work.Mux2c1b
-		--PORT MAP(x1 => Ovfl0, x2 => Ovfl1, s => tempC, y => Ovfl);
 
 -- Right half
 	right_half: 
