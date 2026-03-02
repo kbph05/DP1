@@ -1,4 +1,6 @@
 onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate -divider {CSAN Functional Verification Waveform}
 add wave -noupdate -divider Constants
 add wave -noupdate /tbcsan/N
 add wave -noupdate -divider {DUT Inputs}
@@ -22,7 +24,8 @@ add wave -noupdate -divider Miscellaneous
 add wave -noupdate /tbcsan/main/MeasurementIndex
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {12 ps} 0}
-configure wave -namecolwidth 150
+quietly wave cursor active 0
+configure wave -namecolwidth 209
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
@@ -36,4 +39,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {819 ps}
+WaveRestoreZoom {571222 ps} {572 ns}
