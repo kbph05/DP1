@@ -1,30 +1,30 @@
 # do CSANfv.do
 # 
-# Capturing output into transcript file: ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-03-01_15-33-10.txt
+# Capturing output into transcript file: ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-03-01_18-16-06.txt
 # 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:10 on Mar 01,2026
+# Start time: 18:16:06 on Mar 01,2026
+# vcom -reportprogress 300 -2008 ../SourceCode/Mux2c1b.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Mux2c1b
+# -- Compiling architecture LogicFunc of Mux2c1b
+# End time: 18:16:06 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:16:06 on Mar 01,2026
 # vcom -reportprogress 300 -2008 ../SourceCode/Mux2cNb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Mux2cNb
 # -- Compiling architecture LogicFuncMux2cNb of Mux2cNb
-# End time: 15:33:10 on Mar 01,2026, Elapsed time: 0:00:00
+# End time: 18:16:06 on Mar 01,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:10 on Mar 01,2026
-# vcom -reportprogress 300 -2008 ../SourceCode/FA.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity FA
-# -- Compiling architecture LogicFuncFA of FA
-# End time: 15:33:10 on Mar 01,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:10 on Mar 01,2026
-# vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-03-01_15-33-10.txt ../SourceCode/CSAN.vhd ../SourceCode/FA.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
+# Start time: 18:16:06 on Mar 01,2026
+# vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-03-01_18-16-06.txt ../SourceCode/CSAN.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -33,8 +33,6 @@
 # -- Loading entity Mux2cNb
 # -- Loading package NUMERIC_STD
 # -- Loading entity FullAddr
-# -- Compiling entity FA
-# -- Compiling architecture LogicFuncFA of FA
 # -- Compiling entity FullAddr
 # -- Compiling architecture behavioural of FullAddr
 # -- Compiling entity Mux2c1b
@@ -42,7 +40,7 @@
 # -- Compiling entity Mux2cNb
 # -- Compiling architecture LogicFuncMux2cNb of Mux2cNb
 # -- Compiling entity RCAN
-# -- Compiling architecture Baseline of RCAN
+# -- Compiling architecture LogicFuncRCAN of RCAN
 # -- Loading entity FullAddr
 # -- Compiling package Utils
 # -- Compiling package body Utils
@@ -52,13 +50,13 @@
 # -- Loading package Utils
 # -- Compiling entity TBCSAN
 # -- Compiling architecture TestCSAN of TBCSAN
-# ** Warning: ./TBCSAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: ./TBCSAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: ./TBCSAN.vhd(18): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: ./TBCSAN.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # -- Loading entity CSAN
 # -- Compiling entity TBRCAN
 # -- Compiling architecture TestRCAN of TBRCAN
-# ** Warning: ./TBRCAN.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: ./TBRCAN.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: ./TBRCAN.vhd(18): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: ./TBRCAN.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # -- Loading entity RCAN
-# End time: 15:33:10 on Mar 01,2026, Elapsed time: 0:00:00
+# End time: 18:16:06 on Mar 01,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4

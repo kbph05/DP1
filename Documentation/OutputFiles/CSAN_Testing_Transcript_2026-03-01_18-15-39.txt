@@ -1,0 +1,16 @@
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 18:15:39 on Mar 01,2026
+vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-03-01_18-15-39.txt ../SourceCode/CSAN.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CSAN
+-- Compiling architecture LogicFuncCSAN of CSAN
+-- Loading entity Mux2cNb
+-- Loading package NUMERIC_STD
+-- Loading entity FullAddr
+-- Compiling entity FullAddr
+** Error: ../SourceCode/FullAddr.vhd(13): near ")": (vcom-1576) expecting IDENTIFIER.
+** Note: ../SourceCode/Mux2c1b.vhd(1): VHDL Compiler exiting
+End time: 18:15:39 on Mar 01,2026, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0

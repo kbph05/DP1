@@ -1,10 +1,8 @@
-# End time: 17:06:48 on Mar 01,2026, Elapsed time: 0:00:06
-# Errors: 0, Warnings: 0
-# vsim -c TBCSAN -l ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-03-01_17-06-48.txt -do "
+# vsim -c TBCSAN -l ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-03-01_18-16-06.txt -do "
 #     do waveCSAN.do  
 #     run -all      
 #     " 
-# Start time: 17:06:48 on Mar 01,2026
+# Start time: 18:16:06 on Mar 01,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -16,7 +14,7 @@
 # Loading work.csan(logicfunccsan)
 # Loading work.fulladdr(behavioural)
 # Loading work.mux2cnb(logicfuncmux2cnb)
-# ** Warning: Design size of 107119 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 102377 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # 
 #     do waveCSAN.do  
@@ -126,83 +124,35 @@
 #    Time: 561 ns  Iteration: 0  Instance: /tbcsan
 # ** Note: Measurement #52 Passed. Stimulus: [A: 27134568A6A8FD69 B: 8FA4C4C3B7BC4D95 Cin: 1] Expected Outputs: [S: B6B80A2C5E654AFF Cout: 0 Ovfl: 0] Actual Outputs: [S: B6B80A2C5E654AFF Cout: 0 Ovfl: 0]
 #    Time: 572 ns  Iteration: 0  Instance: /tbcsan
-do CSANfv.do
+do RCAfv.do
+# Cannot open macro file: RCAfv.do
+do RCANfv.do
 # 
-# Capturing output into transcript file: ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-03-01_18-15-39.txt
+# Capturing output into transcript file: ../Documentation/OutputFiles/RCAN_Testing_Transcript_2026-03-01_18-16-24.txt
 # 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:15:39 on Mar 01,2026
+# Start time: 18:16:24 on Mar 01,2026
 # vcom -reportprogress 300 -2008 ../SourceCode/Mux2c1b.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Mux2c1b
 # -- Compiling architecture LogicFunc of Mux2c1b
-# End time: 18:15:39 on Mar 01,2026, Elapsed time: 0:00:00
+# End time: 18:16:24 on Mar 01,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:15:39 on Mar 01,2026
+# Start time: 18:16:24 on Mar 01,2026
 # vcom -reportprogress 300 -2008 ../SourceCode/Mux2cNb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Mux2cNb
 # -- Compiling architecture LogicFuncMux2cNb of Mux2cNb
-# End time: 18:15:39 on Mar 01,2026, Elapsed time: 0:00:00
+# End time: 18:16:24 on Mar 01,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:15:39 on Mar 01,2026
-# vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-03-01_18-15-39.txt ../SourceCode/CSAN.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity CSAN
-# -- Compiling architecture LogicFuncCSAN of CSAN
-# -- Loading entity Mux2cNb
-# -- Loading package NUMERIC_STD
-# -- Loading entity FullAddr
-# -- Compiling entity FullAddr
-# ** Error: ../SourceCode/FullAddr.vhd(13): near ")": (vcom-1576) expecting IDENTIFIER.
-# ** Note: ../SourceCode/Mux2c1b.vhd(1): VHDL Compiler exiting
-# End time: 18:15:39 on Mar 01,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /home/kanez/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vcom failed.
-# Error in macro ./CSANfv.do line 89
-# /home/kanez/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/vcom failed.
-#     while executing
-# "vcom -2008 -logfile $transcript_file ../SourceCode/*.vhd ./*.vhd"
-#     invoked from within
-# "if {$capture_set == 1} {
-#     # 3. Compile all relevant sourcecode    
-#     vcom -2008 ../SourceCode/Mux2c1b.vhd
-#     vcom -2008 ../SourceCode/Mux2cNb.vh..."
-do CSANfv.do
-# 
-# Capturing output into transcript file: ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-03-01_18-15-54.txt
-# 
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:15:54 on Mar 01,2026
-# vcom -reportprogress 300 -2008 ../SourceCode/Mux2c1b.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Mux2c1b
-# -- Compiling architecture LogicFunc of Mux2c1b
-# End time: 18:15:54 on Mar 01,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:15:54 on Mar 01,2026
-# vcom -reportprogress 300 -2008 ../SourceCode/Mux2cNb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity Mux2cNb
-# -- Compiling architecture LogicFuncMux2cNb of Mux2cNb
-# End time: 18:15:54 on Mar 01,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:15:54 on Mar 01,2026
-# vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/CSAN_Testing_Transcript_2026-03-01_18-15-54.txt ../SourceCode/CSAN.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
+# Start time: 18:16:24 on Mar 01,2026
+# vcom -reportprogress 300 -2008 -logfile ../Documentation/OutputFiles/RCAN_Testing_Transcript_2026-03-01_18-16-24.txt ../SourceCode/CSAN.vhd ../SourceCode/FullAddr.vhd ../SourceCode/Mux2c1b.vhd ../SourceCode/Mux2cNb.vhd ../SourceCode/RCAN.vhd ../SourceCode/Utils.vhd ./TBCSAN.vhd ./TBRCAN.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -236,5 +186,5 @@ do CSANfv.do
 # ** Warning: ./TBRCAN.vhd(18): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: ./TBRCAN.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # -- Loading entity RCAN
-# End time: 18:15:54 on Mar 01,2026, Elapsed time: 0:00:00
+# End time: 18:16:24 on Mar 01,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4

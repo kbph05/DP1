@@ -1,5 +1,5 @@
 Fitter report for DP1
-Sun Feb 15 20:14:53 2026
+Sun Mar  1 17:36:30 2026
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Feb 15 20:14:53 2026       ;
+; Fitter Status                      ; Successful - Sun Mar  1 17:36:30 2026       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; DP1                                         ;
 ; Top-level Entity Name              ; RCAN                                        ;
@@ -154,7 +154,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-10        ;   0.2%      ;
+;     Processors 2-10        ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -2950,7 +2950,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  57 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  72 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  71 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -2964,18 +2964,18 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Info (144001): Generated suppressed messages file /home/kanez/Useful/Spring 2026/ENSC 350/DP1/output_files/DP1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1583 megabytes
-    Info: Processing ended: Sun Feb 15 20:14:53 2026
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 1577 megabytes
+    Info: Processing ended: Sun Mar  1 17:36:31 2026
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:11
 
 
 +----------------------------+

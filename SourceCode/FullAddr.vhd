@@ -9,8 +9,7 @@ port (
 		Y 	: in std_logic;
 		Cin	: in std_logic;
 		S		: out std_logic;
-		Cout 	: out std_logic;
-		Ovfl	: out std_logic
+		Cout 	: out std_logic
 );
 end FullAddr;
 
@@ -19,5 +18,4 @@ architecture behavioural of FullAddr is
 begin
 	S <= (X xor Y)	xor Cin;
 	Cout <= (X and Y) or ((X or Y) and Cin);
-	Ovfl <= Cout xor Cin;
 end architecture;
